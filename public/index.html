@@ -25,6 +25,11 @@
     </fieldset>
 
     <fieldset>
+      <legend>Filtrar por familia:</legend>
+      <div id="familia" class="checkbox-grid"></div>
+    </fieldset>
+
+    <fieldset>
       <legend>Opciones adicionales:</legend>
       <label><input type="checkbox" id="filtroVegano"> Solo platos veganos</label><br>
       <label><input type="checkbox" id="filtroSinGluten"> Solo platos sin gluten</label>
@@ -38,6 +43,7 @@
 
   <script>
     const tiposDePlato = ["Entrante", "Principal", "Postre", "Guarnición", "Bebida"];
+    const familias = ["carne", "mariscos", "vegetal", "dulce", "pescado", "lácteos"];
 
     async function cargarIngredientes() {
       const res = await fetch("/ingredientes");
@@ -47,6 +53,7 @@
       const incluirDiv = document.getElementById("incluir");
       const excluirDiv = document.getElementById("excluir");
       const tipoDiv = document.getElementById("tipo");
+      const familiaDiv = document.getElementById("familia");
 
       ingredientes.forEach(ing => {
         const checkboxIncluir = document.createElement("label");
@@ -63,19 +70,26 @@
         checkboxTipo.innerHTML = `<input type="checkbox" name="tipo" value="${tipo}"> ${tipo}`;
         tipoDiv.appendChild(checkboxTipo);
       });
+
+      familias.forEach(fam => {
+        const checkbox = document.createElement("label");
+        checkbox.innerHTML = `<input type="checkbox" name="familia" value="${fam}"> ${fam}`;
+        familiaDiv.appendChild(checkbox);
+      });
     }
 
     async function buscar() {
       const incluir = Array.from(document.querySelectorAll('input[name="incluir"]:checked')).map(cb => cb.value);
       const excluir = Array.from(document.querySelectorAll('input[name="excluir"]:checked')).map(cb => cb.value);
       const tipo = Array.from(document.querySelectorAll('input[name="tipo"]:checked')).map(cb => cb.value);
+      const familia = Array.from(document.querySelectorAll('input[name="familia"]:checked')).map(cb => cb.value);
       const vegano = document.getElementById("filtroVegano").checked;
       const sinGluten = document.getElementById("filtroSinGluten").checked;
 
       const res = await fetch("/buscar", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ incluir, excluir, tipo, vegano, sinGluten })
+        body: JSON.stringify({ incluir, excluir, tipo, familia, vegano, sinGluten })
       });
 
       const data = await res.json();

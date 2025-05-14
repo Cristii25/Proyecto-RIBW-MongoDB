@@ -15,6 +15,7 @@ app.post("/buscar", async (req, res) => {
     incluir = [],
     excluir = [],
     tipo = [],
+    familia = [],
     vegano = false,
     sinGluten = false
   } = req.body;
@@ -24,8 +25,6 @@ app.post("/buscar", async (req, res) => {
 
   const pipeline = [
     { $unwind: "$platos" },
-
-    // Filtro principal
     {
       $match: {
         ...(incluir.length > 0 && {
@@ -33,6 +32,9 @@ app.post("/buscar", async (req, res) => {
         }),
         ...(tipo.length > 0 && {
           "platos.tipo": { $in: tipo }
+        }),
+        ...(familia.length > 0 && {
+          "platos.familia": { $in: familia }
         }),
         ...(vegano && {
           "platos.vegano": true
@@ -42,8 +44,6 @@ app.post("/buscar", async (req, res) => {
         })
       }
     },
-
-    // Campo temporal: intersección con ingredientes excluidos
     {
       $addFields: {
         "platos.ingredientesExcluidos": {
@@ -51,23 +51,17 @@ app.post("/buscar", async (req, res) => {
         }
       }
     },
-
-    // Eliminar platos que contienen ingredientes excluidos
     {
       $match: {
         "platos.ingredientesExcluidos": { $size: 0 }
       }
     },
-
-    // Reagrupar por restaurante
     {
       $group: {
         _id: "$_id",
         platos: { $push: "$platos" }
       }
     },
-
-    // Solo restaurantes con al menos 1 plato válido
     {
       $match: {
         "platos": { $ne: [] }
