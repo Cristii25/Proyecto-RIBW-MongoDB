@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Buscador de Restaurantes</title>
+</head>
+<body>
+    <h1>Filtrar Restaurantes por Ingredientes</h1>
+
+    <form id="busqueda">
+      <label>Ingredientes a incluir:</label><br>
+      <select id="incluir" multiple size="6"></select><br><br>
+    
+      <label>Ingredientes a excluir:</label><br>
+      <select id="excluir" multiple size="6"></select><br><br>
+    
+      <button type="submit">Buscar</button>
+    </form>
+    
+    <div id="resultado"></div>
+    
+    <script>
+      async function cargarIngredientes() {
+        const res = await fetch("/ingredientes");
+        const ingredientes = await res.json();
+    
+        const incluirSelect = document.getElementById("incluir");
+        const excluirSelect = document.getElementById("excluir");
+    
+        ingredientes.forEach(ing => {
+          const optionIncluir = document.createElement("option");
+          optionIncluir.value = ing;
+          optionIncluir.textContent = ing;
+          incluirSelect.appendChild(optionIncluir);
+    
+          const optionExcluir = document.createElement("option");
+          optionExcluir.value = ing;
+          optionExcluir.textContent = ing;
+          excluirSelect.appendChild(optionExcluir);
+        });
+      }
+    
+      document.getElementById("busqueda").addEventListener("submit", async (e) => {
+        e.preventDefault();
+    
+        const incluir = Array.from(document.getElementById("incluir").selectedOptions).map(opt => opt.value);
+        const excluir = Array.from(document.getElementById("excluir").selectedOptions).map(opt => opt.value);
+    
+        const res = await fetch("/buscar", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ incluir, excluir })
+        });
+    
+        const data = await res.json();
+        const div = document.getElementById("resultado");
+    
+        if (data.length === 0) {
+          div.innerHTML = "<p>No se encontraron restaurantes.</p>";
+        } else {
+          div.innerHTML = data.map(r =>
+            `<h3>${r._id}</h3><ul>${r.platos.map(p =>
+              `<li><strong>${p.nombre}</strong> – ${p.ingredientes.join(", ")}</li>`
+            ).join("")}</ul>`
+          ).join("");
+        }
+      });
+    
+      // Llama al cargar la página
+      cargarIngredientes();
+    </script>    
+</body>
+</html>
