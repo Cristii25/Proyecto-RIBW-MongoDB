@@ -11,6 +11,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.post("/buscar", async (req, res) => {
     const {
+      nombreRestaurante = "",
       incluir = [],
       excluir = [],
       tipo = [],
@@ -24,6 +25,7 @@ app.post("/buscar", async (req, res) => {
     const restaurantes = db.collection("restaurantes");
   
     const hayFiltros =
+      nombreRestaurante.trim() !== "" ||
       incluir.length > 0 ||
       excluir.length > 0 ||
       tipo.length > 0 ||
@@ -39,6 +41,9 @@ app.post("/buscar", async (req, res) => {
     }
   
     const pipeline = [
+      ...(nombreRestaurante
+        ? [{ $match: { _id: { $regex: new RegExp(nombreRestaurante, "i") } } }]
+        : []),
       { $unwind: "$platos" },
       {
         $match: {
@@ -93,28 +98,33 @@ app.post("/buscar", async (req, res) => {
     res.json(resultado);
   });
   
+  app.get("/ingredientes", async (req, res) => {
+    const db = await conectar();
+    const restaurantes = db.collection("restaurantes");
+  
+    const ingredientes = await restaurantes.aggregate([
+      { $unwind: "$platos" },
+      { $unwind: "$platos.ingredientes" },
+      {
+        $group: {
+          _id: null,
+          ingredientes: { $addToSet: "$platos.ingredientes" }
+        }
+      },
+      { $project: { _id: 0, ingredientes: 1 } }
+    ]).toArray();
+  
+    const lista = ingredientes[0]?.ingredientes || [];
+    lista.sort((a, b) => a.localeCompare(b));
+    res.json(lista);
+  });
 
-app.get("/ingredientes", async (req, res) => {
-  const db = await conectar();
-  const restaurantes = db.collection("restaurantes");
-
-  const ingredientes = await restaurantes.aggregate([
-    { $unwind: "$platos" },
-    { $unwind: "$platos.ingredientes" },
-    {
-      $group: {
-        _id: null,
-        ingredientes: { $addToSet: "$platos.ingredientes" }
-      }
-    },
-    { $project: { _id: 0, ingredientes: 1 } }
-  ]).toArray();
-
-  const lista = ingredientes[0]?.ingredientes || [];
-  lista.sort((a, b) => a.localeCompare(b));
-  res.json(lista);
-});
-
-app.listen(3000, () => {
-  console.log("✅ Servidor corriendo en http://localhost:3000");
-});
+  app.get("/restaurantes", async (req, res) => {
+    const db = await conectar();
+    const restaurantes = await db.collection("restaurantes").distinct("_id");
+    res.json(restaurantes);
+  });  
+  
+  app.listen(3000, () => {
+    console.log("✅ Servidor corriendo en http://localhost:3000");
+  });
