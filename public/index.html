@@ -30,7 +30,7 @@
   </style>
 </head>
 <body>
-  <h1>Filtrar Restaurantes por Ingredientes</h1>
+  <h1>Filtrar Restaurantes</h1>
 
   <form id="busqueda">
     <fieldset>
@@ -41,6 +41,11 @@
     <fieldset>
       <legend>Excluir ingredientes:</legend>
       <div id="excluir" class="checkbox-grid"></div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Filtrar por tipo de plato:</legend>
+      <div id="tipo" class="checkbox-grid"></div>
     </fieldset>
 
     <fieldset>
@@ -56,6 +61,8 @@
   <div id="resultado"></div>
 
   <script>
+    const tiposDePlato = ["Entrante", "Principal", "Postre", "Guarnición", "Bebida"];
+
     async function cargarIngredientes() {
       const res = await fetch("/ingredientes");
       const ingredientes = await res.json();
@@ -63,6 +70,7 @@
 
       const incluirDiv = document.getElementById("incluir");
       const excluirDiv = document.getElementById("excluir");
+      const tipoDiv = document.getElementById("tipo");
 
       ingredientes.forEach(ing => {
         const checkboxIncluir = document.createElement("label");
@@ -73,18 +81,25 @@
         checkboxExcluir.innerHTML = `<input type="checkbox" name="excluir" value="${ing}"> ${ing}`;
         excluirDiv.appendChild(checkboxExcluir);
       });
+
+      tiposDePlato.forEach(tipo => {
+        const checkboxTipo = document.createElement("label");
+        checkboxTipo.innerHTML = `<input type="checkbox" name="tipo" value="${tipo}"> ${tipo}`;
+        tipoDiv.appendChild(checkboxTipo);
+      });
     }
 
     async function buscar() {
       const incluir = Array.from(document.querySelectorAll('input[name="incluir"]:checked')).map(cb => cb.value);
       const excluir = Array.from(document.querySelectorAll('input[name="excluir"]:checked')).map(cb => cb.value);
+      const tipo = Array.from(document.querySelectorAll('input[name="tipo"]:checked')).map(cb => cb.value);
       const vegano = document.getElementById("filtroVegano").checked;
       const sinGluten = document.getElementById("filtroSinGluten").checked;
 
       const res = await fetch("/buscar", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ incluir, excluir, vegano, sinGluten })
+        body: JSON.stringify({ incluir, excluir, tipo, vegano, sinGluten })
       });
 
       const data = await res.json();
@@ -95,7 +110,7 @@
       } else {
         div.innerHTML = data.map(r =>
           `<h3>${r._id}</h3><ul>${r.platos.map(p =>
-            `<li><strong>${p.nombre}</strong> – ${p.ingredientes.join(", ")}${p.vegano ? " 🥦 vegano" : ""}${p.sin_gluten ? " 🚫 gluten" : ""}</li>`
+            `<li><strong>${p.nombre}</strong> – ${p.ingredientes.join(", ")}${p.vegano ? " 🥦" : ""}${p.sin_gluten ? " 🚫 gluten" : ""}</li>`
           ).join("")}</ul>`
         ).join("");
       }
