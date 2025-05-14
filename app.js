@@ -7,71 +7,92 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Servir archivos estáticos (HTML)
 app.use(express.static(path.join(__dirname, "public")));
 
 app.post("/buscar", async (req, res) => {
-  const {
-    incluir = [],
-    excluir = [],
-    tipo = [],
-    familia = [],
-    vegano = false,
-    sinGluten = false
-  } = req.body;
-
-  const db = await conectar();
-  const restaurantes = db.collection("restaurantes");
-
-  const pipeline = [
-    { $unwind: "$platos" },
-    {
-      $match: {
-        ...(incluir.length > 0 && {
-          "platos.ingredientes": { $elemMatch: { $in: incluir } }
-        }),
-        ...(tipo.length > 0 && {
-          "platos.tipo": { $in: tipo }
-        }),
-        ...(familia.length > 0 && {
-          "platos.familia": { $in: familia }
-        }),
-        ...(vegano && {
-          "platos.vegano": true
-        }),
-        ...(sinGluten && {
-          "platos.sin_gluten": true
-        })
-      }
-    },
-    {
-      $addFields: {
-        "platos.ingredientesExcluidos": {
-          $setIntersection: ["$platos.ingredientes", excluir]
+    const {
+      incluir = [],
+      excluir = [],
+      tipo = [],
+      familia = [],
+      vegano = false,
+      sinGluten = false,
+      ordenPrecio = null
+    } = req.body;
+  
+    const db = await conectar();
+    const restaurantes = db.collection("restaurantes");
+  
+    const hayFiltros =
+      incluir.length > 0 ||
+      excluir.length > 0 ||
+      tipo.length > 0 ||
+      familia.length > 0 ||
+      vegano ||
+      sinGluten ||
+      ordenPrecio;
+  
+    // Si no hay filtros, devolver todos los restaurantes y platos
+    if (!hayFiltros) {
+      const resultado = await restaurantes.find({}).toArray();
+      return res.json(resultado);
+    }
+  
+    const pipeline = [
+      { $unwind: "$platos" },
+      {
+        $match: {
+          ...(incluir.length > 0 && {
+            "platos.ingredientes": { $elemMatch: { $in: incluir } }
+          }),
+          ...(tipo.length > 0 && {
+            "platos.tipo": { $in: tipo }
+          }),
+          ...(familia.length > 0 && {
+            "platos.familia": { $in: familia }
+          }),
+          ...(vegano && {
+            "platos.vegano": true
+          }),
+          ...(sinGluten && {
+            "platos.sin_gluten": true
+          })
+        }
+      },
+      {
+        $addFields: {
+          "platos.ingredientesExcluidos": {
+            $setIntersection: ["$platos.ingredientes", excluir]
+          }
+        }
+      },
+      {
+        $match: {
+          "platos.ingredientesExcluidos": { $size: 0 }
+        }
+      },
+      ...(ordenPrecio === "asc"
+        ? [{ $sort: { "platos.precio": 1 } }]
+        : ordenPrecio === "desc"
+        ? [{ $sort: { "platos.precio": -1 } }]
+        : []),
+      {
+        $group: {
+          _id: "$_id",
+          platos: { $push: "$platos" }
+        }
+      },
+      {
+        $match: {
+          "platos": { $ne: [] }
         }
       }
-    },
-    {
-      $match: {
-        "platos.ingredientesExcluidos": { $size: 0 }
-      }
-    },
-    {
-      $group: {
-        _id: "$_id",
-        platos: { $push: "$platos" }
-      }
-    },
-    {
-      $match: {
-        "platos": { $ne: [] }
-      }
-    }
-  ];
-
-  const resultado = await restaurantes.aggregate(pipeline).toArray();
-  res.json(resultado);
-});
+    ];
+  
+    const resultado = await restaurantes.aggregate(pipeline).toArray();
+    res.json(resultado);
+  });
+  
 
 app.get("/ingredientes", async (req, res) => {
   const db = await conectar();

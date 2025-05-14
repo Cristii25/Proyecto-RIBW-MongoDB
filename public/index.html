@@ -35,6 +35,15 @@
       <label><input type="checkbox" id="filtroSinGluten"> Solo platos sin gluten</label>
     </fieldset>
 
+    <fieldset>
+      <legend>Ordenar por precio:</legend>
+      <select id="ordenPrecio">
+        <option value="">-- Ninguno --</option>
+        <option value="asc">Menor a mayor</option>
+        <option value="desc">Mayor a menor</option>
+      </select>
+    </fieldset>
+
     <button type="submit">Buscar</button>
     <button type="button" id="limpiar">Limpiar filtros</button>
   </form>
@@ -85,11 +94,12 @@
       const familia = Array.from(document.querySelectorAll('input[name="familia"]:checked')).map(cb => cb.value);
       const vegano = document.getElementById("filtroVegano").checked;
       const sinGluten = document.getElementById("filtroSinGluten").checked;
+      const ordenPrecio = document.getElementById("ordenPrecio").value;
 
       const res = await fetch("/buscar", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ incluir, excluir, tipo, familia, vegano, sinGluten })
+        body: JSON.stringify({ incluir, excluir, tipo, familia, vegano, sinGluten, ordenPrecio })
       });
 
       const data = await res.json();
@@ -100,7 +110,7 @@
       } else {
         div.innerHTML = data.map(r =>
           `<h3>${r._id}</h3><ul>${r.platos.map(p =>
-            `<li><strong>${p.nombre}</strong> – ${p.ingredientes.join(", ")}${p.vegano ? " 🥦" : ""}${p.sin_gluten ? " 🚫 gluten" : ""}</li>`
+            `<li><strong>${p.nombre}</strong> – ${p.precio.toFixed(2)}€ – ${p.ingredientes.join(", ")}${p.vegano ? " 🥦" : ""}${p.sin_gluten ? " 🚫 gluten" : ""}</li>`
           ).join("")}</ul>`
         ).join("");
       }
@@ -113,6 +123,7 @@
 
     document.getElementById("limpiar").addEventListener("click", async () => {
       document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+      document.getElementById("ordenPrecio").value = "";
       await buscar();
     });
 
