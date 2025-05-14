@@ -12,40 +12,49 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.post("/buscar", async (req, res) => {
     const { incluir = [], excluir = [] } = req.body;
-  
+
     const db = await conectar();
     const restaurantes = db.collection("restaurantes");
-  
+
     const pipeline = [
-      { $unwind: "$platos" },
-      {
-        $match: {
-          ...(incluir.length > 0 && {
-            "platos.ingredientes": { $all: incluir }
-          }),
-          ...(excluir.length > 0 && {
-            "platos.ingredientes": { $not: { $elemMatch: { $in: excluir } } }
-          })
+        { $unwind: "$platos" },
+        {
+            $match: {
+                ...(incluir.length > 0 && {
+                    "platos.ingredientes": { $elemMatch: { $in: incluir } }
+                })
+            }
+        },
+        {
+            $addFields: {
+                "platos.ingredientesExcluidos": {
+                    $setIntersection: ["$platos.ingredientes", excluir]
+                }
+            }
+        },
+        {
+            $match: {
+                "platos.ingredientesExcluidos": { $size: 0 }
+            }
+        },
+        {
+            $group: {
+                _id: "$_id",
+                platos: { $push: "$platos" }
+            }
+        },
+        {
+            $match: {
+                "platos": { $ne: [] }
+            }
         }
-      },
-      {
-        $group: {
-          _id: "$_id",
-          platos: { $push: "$platos" }
-        }
-      },
-      {
-        $match: {
-          "platos": { $ne: [] }
-        }
-      }
     ];
-  
+
     const resultado = await restaurantes.aggregate(pipeline).toArray();
     res.json(resultado);
-  });    
+});
 
-  app.get("/ingredientes", async (req, res) => {
+app.get("/ingredientes", async (req, res) => {
     const db = await conectar();
     const restaurantes = db.collection("restaurantes");
   
@@ -59,7 +68,7 @@ app.post("/buscar", async (req, res) => {
     const lista = ingredientes[0]?.ingredientes || [];
     lista.sort((a, b) => a.localeCompare(b)); // 👈 orden alfabético
     res.json(lista);
-  });  
+});  
 
 app.listen(3000, () => {
   console.log("✅ Servidor corriendo en http://localhost:3000");
