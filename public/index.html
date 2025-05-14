@@ -3,71 +3,115 @@
 <head>
   <meta charset="UTF-8">
   <title>Buscador de Restaurantes</title>
+  <style>
+    .checkbox-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 6px;
+      max-height: 300px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    fieldset {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    #resultado {
+      margin-top: 30px;
+    }
+  </style>
 </head>
 <body>
-    <h1>Filtrar Restaurantes por Ingredientes</h1>
+  <h1>Filtrar Restaurantes por Ingredientes</h1>
 
-    <form id="busqueda">
-      <label>Ingredientes a incluir:</label><br>
-      <select id="incluir" multiple size="6"></select><br><br>
-    
-      <label>Ingredientes a excluir:</label><br>
-      <select id="excluir" multiple size="6"></select><br><br>
-    
-      <button type="submit">Buscar</button>
-    </form>
-    
-    <div id="resultado"></div>
-    
-    <script>
-      async function cargarIngredientes() {
-        const res = await fetch("/ingredientes");
-        const ingredientes = await res.json();
-    
-        const incluirSelect = document.getElementById("incluir");
-        const excluirSelect = document.getElementById("excluir");
-    
-        ingredientes.forEach(ing => {
-          const optionIncluir = document.createElement("option");
-          optionIncluir.value = ing;
-          optionIncluir.textContent = ing;
-          incluirSelect.appendChild(optionIncluir);
-    
-          const optionExcluir = document.createElement("option");
-          optionExcluir.value = ing;
-          optionExcluir.textContent = ing;
-          excluirSelect.appendChild(optionExcluir);
-        });
-      }
-    
-      document.getElementById("busqueda").addEventListener("submit", async (e) => {
-        e.preventDefault();
-    
-        const incluir = Array.from(document.getElementById("incluir").selectedOptions).map(opt => opt.value);
-        const excluir = Array.from(document.getElementById("excluir").selectedOptions).map(opt => opt.value);
-    
-        const res = await fetch("/buscar", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ incluir, excluir })
-        });
-    
-        const data = await res.json();
-        const div = document.getElementById("resultado");
-    
-        if (data.length === 0) {
-          div.innerHTML = "<p>No se encontraron restaurantes.</p>";
-        } else {
-          div.innerHTML = data.map(r =>
-            `<h3>${r._id}</h3><ul>${r.platos.map(p =>
-              `<li><strong>${p.nombre}</strong> – ${p.ingredientes.join(", ")}</li>`
-            ).join("")}</ul>`
-          ).join("");
-        }
+  <form id="busqueda">
+    <fieldset>
+      <legend>Incluir ingredientes:</legend>
+      <div id="incluir" class="checkbox-grid"></div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Excluir ingredientes:</legend>
+      <div id="excluir" class="checkbox-grid"></div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Opciones adicionales:</legend>
+      <label><input type="checkbox" id="filtroVegano"> Solo platos veganos</label><br>
+      <label><input type="checkbox" id="filtroSinGluten"> Solo platos sin gluten</label>
+    </fieldset>
+
+    <button type="submit">Buscar</button>
+    <button type="button" id="limpiar">Limpiar filtros</button>
+  </form>
+
+  <div id="resultado"></div>
+
+  <script>
+    async function cargarIngredientes() {
+      const res = await fetch("/ingredientes");
+      const ingredientes = await res.json();
+      ingredientes.sort((a, b) => a.localeCompare(b));
+
+      const incluirDiv = document.getElementById("incluir");
+      const excluirDiv = document.getElementById("excluir");
+
+      ingredientes.forEach(ing => {
+        const checkboxIncluir = document.createElement("label");
+        checkboxIncluir.innerHTML = `<input type="checkbox" name="incluir" value="${ing}"> ${ing}`;
+        incluirDiv.appendChild(checkboxIncluir);
+
+        const checkboxExcluir = document.createElement("label");
+        checkboxExcluir.innerHTML = `<input type="checkbox" name="excluir" value="${ing}"> ${ing}`;
+        excluirDiv.appendChild(checkboxExcluir);
       });
-    
-      // Llama al cargar la página
-      cargarIngredientes();
-    </script>    
+    }
+
+    async function buscar() {
+      const incluir = Array.from(document.querySelectorAll('input[name="incluir"]:checked')).map(cb => cb.value);
+      const excluir = Array.from(document.querySelectorAll('input[name="excluir"]:checked')).map(cb => cb.value);
+      const vegano = document.getElementById("filtroVegano").checked;
+      const sinGluten = document.getElementById("filtroSinGluten").checked;
+
+      const res = await fetch("/buscar", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ incluir, excluir, vegano, sinGluten })
+      });
+
+      const data = await res.json();
+      const div = document.getElementById("resultado");
+
+      if (data.length === 0) {
+        div.innerHTML = "<p>No se encontraron restaurantes.</p>";
+      } else {
+        div.innerHTML = data.map(r =>
+          `<h3>${r._id}</h3><ul>${r.platos.map(p =>
+            `<li><strong>${p.nombre}</strong> – ${p.ingredientes.join(", ")}${p.vegano ? " 🥦 vegano" : ""}${p.sin_gluten ? " 🚫 gluten" : ""}</li>`
+          ).join("")}</ul>`
+        ).join("");
+      }
+    }
+
+    document.getElementById("busqueda").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      await buscar();
+    });
+
+    document.getElementById("limpiar").addEventListener("click", async () => {
+      document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+      await buscar();
+    });
+
+    cargarIngredientes();
+  </script>
 </body>
 </html>
