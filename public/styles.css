@@ -109,6 +109,41 @@ button:hover {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+#buscarPlato {
+  max-width: 800px;
+  margin: 20px auto;
+  background: var(--secondary-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#buscarPlato input {
+  width: calc(100% - 120px);
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+}
+
+#resultadoPlatos {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: var(--secondary-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#resultadoPlatos div {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 @media (max-width: 768px) {
   form, #resultado {
     padding: 15px;

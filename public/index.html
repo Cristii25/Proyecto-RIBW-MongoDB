@@ -8,6 +8,19 @@
 <body>
   <h1>Busca tu comida</h1>
 
+  <!-- Nuevo formulario para buscar platos -->
+  <form id="buscarPlato">
+    <fieldset>
+      <legend>Buscar plato por nombre:</legend>
+      <input type="text" id="nombrePlato" placeholder="Introduce el nombre del plato" required>
+      <button type="submit">Buscar</button>
+    </fieldset>
+  </form>
+
+  <!-- Resultados de la búsqueda de platos -->
+  <div id="resultadoPlatos"></div>
+
+  <!-- Formulario existente -->
   <form id="busqueda">
     <fieldset>
       <legend>Nombre del restaurante:</legend>
@@ -124,6 +137,34 @@
           ).join("");
     }
 
+    async function buscarPlato() {
+      const nombrePlato = document.getElementById("nombrePlato").value;
+
+      const res = await fetch("/buscar-plato", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ nombrePlato })
+      });
+
+      const data = await res.json();
+      const div = document.getElementById("resultadoPlatos");
+
+      if (data.length === 0) {
+        div.innerHTML = "<p>No se encontraron platos con ese nombre.</p>";
+      } else {
+        div.innerHTML = data.map(item =>
+          `<div>
+            <h3>${item.plato.nombre}</h3>
+            <p><strong>Restaurante:</strong> ${item.restaurante}</p>
+            <p><strong>Precio:</strong> ${item.plato.precio.toFixed(2)}€</p>
+            <p><strong>Ingredientes:</strong> ${item.plato.ingredientes.join(", ")}</p>
+            ${item.plato.vegano ? "<p>🥦 Vegano</p>" : ""}
+            ${item.plato.sin_gluten ? "<p>🚫 Sin gluten</p>" : ""}
+          </div>`
+        ).join("");
+      }
+    }
+
     document.getElementById("busqueda").addEventListener("submit", async (e) => {
       e.preventDefault();
       await buscar();
@@ -134,6 +175,11 @@
       document.getElementById("ordenPrecio").value = "";
       document.getElementById("nombreRestaurante").value = "";
       await buscar();
+    });
+
+    document.getElementById("buscarPlato").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      await buscarPlato();
     });
 
     cargarIngredientes();

@@ -123,7 +123,37 @@ app.post("/buscar", async (req, res) => {
     const db = await conectar();
     const restaurantes = await db.collection("restaurantes").distinct("_id");
     res.json(restaurantes);
-  });  
+  }); 
+  
+  app.post("/buscar-plato", async (req, res) => {
+    const { nombrePlato = "" } = req.body;
+
+    if (!nombrePlato.trim()) {
+      return res.status(400).json({ error: "El nombre del plato es obligatorio." });
+    }
+
+    const db = await conectar();
+    const restaurantes = db.collection("restaurantes");
+
+    const pipeline = [
+      { $unwind: "$platos" },
+      {
+        $match: {
+          "platos.nombre": { $regex: new RegExp(nombrePlato, "i") } // Búsqueda parcial con regex
+        }
+      },
+      {
+        $project: {
+          _id: 0,
+          restaurante: "$_id",
+          plato: "$platos"
+        }
+      }
+    ];
+
+    const resultado = await restaurantes.aggregate(pipeline).toArray();
+    res.json(resultado);
+  });
   
   app.listen(3000, () => {
     console.log("✅ Servidor corriendo en http://localhost:3000");
