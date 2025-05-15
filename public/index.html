@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <title>Busca tu comida</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <h1>Busca tu comida</h1>
 
@@ -14,6 +16,7 @@
       <legend>Buscar plato por nombre:</legend>
       <input type="text" id="nombrePlato" placeholder="Introduce el nombre del plato" required>
       <button type="submit">Buscar</button>
+      <button type="button" id="borrarBusquedaPlato">Limpiar</button>
     </fieldset>
   </form>
 
@@ -128,13 +131,14 @@
       const data = await res.json();
       const div = document.getElementById("resultado");
 
+      div.style.display = "block";
       div.innerHTML = data.length === 0
         ? "<p>No se encontraron restaurantes.</p>"
         : data.map(r =>
-            `<h3>${r._id}</h3><ul>${r.platos.map(p =>
-              `<li><strong>${p.nombre}</strong> – ${p.precio.toFixed(2)}€ – ${p.ingredientes.join(", ")}${p.vegano ? " 🥦" : ""}${p.sin_gluten ? " 🚫 gluten" : ""}</li>`
-            ).join("")}</ul>`
-          ).join("");
+          `<h3>${r._id}</h3><ul>${r.platos.map(p =>
+            `<li><strong>${p.nombre}</strong> – ${p.precio.toFixed(2)}€ – ${p.ingredientes.join(", ")}${p.vegano ? " 🥦" : ""}${p.sin_gluten ? " 🚫 gluten" : ""}</li>`
+          ).join("")}</ul>`
+        ).join("");
     }
 
     async function buscarPlato() {
@@ -152,6 +156,7 @@
       if (data.length === 0) {
         div.innerHTML = "<p>No se encontraron platos con ese nombre.</p>";
       } else {
+        div.style.display = "block";
         div.innerHTML = data.map(item =>
           `<div>
             <h3>${item.plato.nombre}</h3>
@@ -175,6 +180,7 @@
       document.getElementById("ordenPrecio").value = "";
       document.getElementById("nombreRestaurante").value = "";
       await buscar();
+      document.getElementById("resultado").style.display = "none";
     });
 
     document.getElementById("buscarPlato").addEventListener("submit", async (e) => {
@@ -183,6 +189,16 @@
     });
 
     cargarIngredientes();
+
+    // Botón para limpiar búsqueda de platos
+    document.getElementById("borrarBusquedaPlato").addEventListener("click", () => {
+      document.getElementById("nombrePlato").value = "";
+      const contenedor = document.getElementById("resultadoPlatos");
+      contenedor.innerHTML = "";
+      contenedor.style.display = "none";
+    });
+
   </script>
 </body>
+
 </html>
