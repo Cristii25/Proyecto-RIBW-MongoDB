@@ -1,0 +1,2234 @@
+[
+  {
+    "_id": "El Sabor",
+    "platos": [
+      {
+        "nombre": "Tartar de Salmón",
+        "tipo": "Entrante",
+        "ingredientes": ["Salmón", "Aguacate", "Sésamo", "Salsa Soja"],
+        "precio": 12.0,
+        "familia": "Pescado",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Queso Manchego Curado",
+        "tipo": "Entrante",
+        "ingredientes": ["Queso Manchego", "Aceite de Oliva"],
+        "precio": 8.0,
+        "familia": "Lácteos",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Paté de Cabracho",
+        "tipo": "Entrante",
+        "ingredientes": ["Cabracho", "Huevo", "Nata", "Pan"],
+        "precio": 7.5,
+        "familia": "Pescado",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Ensaladilla Rusa",
+        "tipo": "Entrante",
+        "ingredientes": [
+          "Patata",
+          "Zanahoria",
+          "Atún",
+          "Mayonesa",
+          "Guisantes"
+        ],
+        "precio": 6.5,
+        "familia": "Vegetal",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Calamares a la Romana",
+        "tipo": "Entrante",
+        "ingredientes": [
+          "Calamares",
+          "Harina",
+          "Aceite de Oliva",
+          "Limón"
+        ],
+        "precio": 9.0,
+        "familia": "Mariscos",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Gazpacho Andaluz",
+        "tipo": "Primer plato",
+        "ingredientes": [
+          "Tomate",
+          "Pepino",
+          "Pimiento",
+          "Ajo",
+          "Aceite De Oliva"
+        ],
+        "precio": 7.5,
+        "familia": "Vegetal",
+        "vegano": true,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Sopa de Marisco",
+        "tipo": "Primer plato",
+        "ingredientes": [
+          "Mariscos",
+          "Pescado",
+          "Tomate",
+          "Cebolla"
+        ],
+        "precio": 8.5,
+        "familia": "Mariscos",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Crema de Marisco",
+        "tipo": "Primer plato",
+        "ingredientes": ["Mariscos", "Nata", "Cebolla", "Caldo"],
+        "precio": 9.0,
+        "familia": "Mariscos",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Sopa Castellana",
+        "tipo": "Primer plato",
+        "ingredientes": ["Pan", "Ajo", "Huevo", "Jamón", "Caldo"],
+        "precio": 8.0,
+        "familia": "Vegetal",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Ensalada de Pasta",
+        "tipo": "Primer plato",
+        "ingredientes": ["Pasta", "Tomate", "Atún", "Aceitunas"],
+        "precio": 7.5,
+        "familia": "Vegetal",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Paella",
+        "tipo": "Segundo plato",
+        "ingredientes": [
+          "Arroz",
+          "Mariscos",
+          "Azafrán"
+        ],
+        "precio": 15.5,
+        "familia": "Mariscos",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Pulpo a la Gallega",
+        "tipo": "Segundo plato",
+        "ingredientes": [
+          "Pulpo",
+          "Patata",
+          "Pimentón",
+          "Aceite De Oliva"
+        ],
+        "precio": 18.0,
+        "familia": "Mariscos",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Merluza a la Vasca",
+        "tipo": "Segundo plato",
+        "ingredientes": ["Merluza", "Guisantes", "Espárragos", "Almejas"],
+        "precio": 16.0,
+        "familia": "Pescado",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Pollo al Ajillo",
+        "tipo": "Segundo plato",
+        "ingredientes": ["Pollo", "Ajo", "Aceite de Oliva", "Vino Blanco"],
+        "precio": 13.0,
+        "familia": "Carne",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Carrillera Ibérica",
+        "tipo": "Segundo plato",
+        "ingredientes": ["Carrillera", "Vino Tinto", "Zanahoria", "Cebolla"],
+        "precio": 15.0,
+        "familia": "Carne",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Lubina al Horno",
+        "tipo": "Segundo plato",
+        "ingredientes": ["Lubina", "Patata", "Cebolla", "Aceite de Oliva"],
+        "precio": 17.0,
+        "familia": "Pescado",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Flan Casero",
+        "tipo": "Postre",
+        "ingredientes": [
+          "Huevo",
+          "Leche",
+          "Azúcar",
+          "Caramelo"
+        ],
+        "precio": 4.0,
+        "familia": "Lácteos",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Tarta de Santiago",
+        "tipo": "Postre",
+        "ingredientes": [
+          "Almendra",
+          "Azúcar",
+          "Huevo",
+          "Limón"
+        ],
+        "precio": 5.0,
+        "familia": "Lácteos",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Helado de Vainilla",
+        "tipo": "Postre",
+        "ingredientes": ["Leche", "Azúcar", "Vainilla"],
+        "precio": 4.0,
+        "familia": "Helado",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Fruta de Temporada",
+        "tipo": "Postre",
+        "ingredientes": ["Fruta Variada"],
+        "precio": 3.5,
+        "familia": "Fruta",
+        "vegano": true,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Natillas Caseras",
+        "tipo": "Postre",
+        "ingredientes": ["Leche", "Huevo", "Azúcar", "Canela"],
+        "precio": 4.5,
+        "familia": "Lácteos",
+        "vegano": false,
+        "sin_gluten": true
+      }
+    ]
+  },
+  {
+    "_id": "Veggie Place",
+    "platos": [
+      {
+        "nombre": "Ensalada de quinoa",
+        "tipo": "Entrante",
+        "ingredientes": [
+          "Quinoa",
+          "Aguacate",
+          "Tomate"
+        ],
+        "precio": 10.0,
+        "familia": "Vegetal",
+        "vegano": true,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Berenjenas con Miel",
+        "tipo": "Entrante",
+        "ingredientes": [
+          "Berenjena",
+          "Miel",
+          "Harina"
+        ],
+        "precio": 8.0,
+        "familia": "Vegetal",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Falafel con salsa tahini",
+        "tipo": "Entrante",
+        "ingredientes": [
+          "Garbanzos",
+          "Cilantro",
+          "Tahini",
+          "Ajo"
+        ],
+        "precio": 7.0,
+        "familia": "Vegetal",
+        "vegano": true,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Gazpacho de Remolacha",
+        "tipo": "Entrante",
+        "ingredientes": ["Remolacha", "Tomate", "Pepino", "Aceite de Oliva"],
+        "precio": 6.0,
+        "familia": "Vegetal",
+        "vegano": true,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Rollitos de Primavera Veganos",
+        "tipo": "Entrante",
+        "ingredientes": ["Masa de arroz", "Verduras", "Soja"],
+        "precio": 7.0,
+        "familia": "Vegetal",
+        "vegano": true,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Carpaccio de Calabacín",
+        "tipo": "Primer plato",
+        "ingredientes": ["Calabacín", "Aceite de Oliva", "Limón", "Pimienta"],
+        "precio": 6.5,
+        "familia": "Vegetal",
+        "vegano": true,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Hamburguesa Vegetal",
+        "tipo": "Segundo plato",
+        "ingredientes": [
+          "Pan",
+          "Soja Texturizada",
+          "Lechuga",
+          "Tomate",
+          "Cebolla"
+        ],
+        "precio": 11.5,
+        "familia": "Vegetal",
+        "vegano": true,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Crema de Calabaza",
+        "tipo": "Primer plato",
+        "ingredientes": [
+          "Calabaza",
+          "Cebolla",
+          "Zanahoria",
+          "Aceite de Oliva"
+        ],
+        "precio": 7.0,
+        "familia": "Vegetal",
+        "vegano": true,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Brownie Vegano",
+        "tipo": "Postre",
+        "ingredientes": [
+          "Cacao",
+          "Harina",
+          "Nueces",
+          "Aceite de Coco"
+        ],
+        "precio": 5.0,
+        "familia": "Lácteos",
+        "vegano": true,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Lasaña de Verduras",
+        "tipo": "Segundo plato",
+        "ingredientes": [
+          "Berenjena",
+          "Calabacín",
+          "Tomate",
+          "Queso Vegano"
+        ],
+        "precio": 12.0,
+        "familia": "Vegetal",
+        "vegano": true,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Helado Vegano de Mango",
+        "tipo": "Postre",
+        "ingredientes": [
+          "Mango",
+          "Leche de Coco",
+          "Azúcar"
+        ],
+        "precio": 4.5,
+        "familia": "Helado",
+        "vegano": true,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Sopa Thai Vegana",
+        "tipo": "Primer plato",
+        "ingredientes": ["Leche de coco", "Setas", "Tofu", "Cilantro"],
+        "precio": 8.0,
+        "familia": "Vegetal",
+        "vegano": true,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Ensalada de Lentejas",
+        "tipo": "Primer plato",
+        "ingredientes": ["Lentejas", "Tomate", "Cebolla", "Pimiento"],
+        "precio": 7.0,
+        "familia": "Vegetal",
+        "vegano": true,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Crema de Zanahoria y Naranja",
+        "tipo": "Primer plato",
+        "ingredientes": ["Zanahoria", "Naranja", "Cebolla", "Aceite de Oliva"],
+        "precio": 7.5,
+        "familia": "Vegetal",
+        "vegano": true,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Albóndigas Veganas",
+        "tipo": "Segundo plato",
+        "ingredientes": ["Soja texturizada", "Tomate", "Cebolla", "Ajo"],
+        "precio": 10.0,
+        "familia": "Vegetal",
+        "vegano": true,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Tofu al Curry",
+        "tipo": "Segundo plato",
+        "ingredientes": ["Tofu", "Curry", "Leche de coco", "Verduras"],
+        "precio": 11.0,
+        "familia": "Vegetal",
+        "vegano": true,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Pizza Vegana",
+        "tipo": "Segundo plato",
+        "ingredientes": ["Masa", "Tomate", "Queso vegano", "Verduras"],
+        "precio": 12.0,
+        "familia": "Vegetal",
+        "vegano": true,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Pastel de Calabaza Vegano",
+        "tipo": "Postre",
+        "ingredientes": ["Calabaza", "Harina", "Azúcar", "Canela"],
+        "precio": 5.0,
+        "familia": "Lácteos",
+        "vegano": true,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Macedonia de Frutas",
+        "tipo": "Postre",
+        "ingredientes": ["Frutas variadas"],
+        "precio": 4.0,
+        "familia": "Fruta",
+        "vegano": true,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Tarta de Manzana Vegana",
+        "tipo": "Postre",
+        "ingredientes": ["Manzana", "Harina", "Azúcar", "Aceite de Coco"],
+        "precio": 5.5,
+        "familia": "Lácteos",
+        "vegano": true,
+        "sin_gluten": false
+      }
+    ]
+  },
+  {
+    "_id": "Jardín de los Golfines",
+    "platos": [
+      {
+        "nombre": "Jamón Ibérico de Bellota",
+        "tipo": "Entrante",
+        "ingredientes": [
+          "Jamón Ibérico",
+          "Pan",
+          "Tomate"
+        ],
+        "precio": 23.9,
+        "familia": "Embutido",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Salmorejo Cordobés",
+        "tipo": "Primer plato",
+        "ingredientes": [
+          "Tomate",
+          "Pan",
+          "Jamón Ibérico",
+          "Helado De Queso"
+        ],
+        "precio": 9.9,
+        "familia": "Vegetal",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Gyozas de Rabo de Toro",
+        "tipo": "Segundo plato",
+        "ingredientes": [
+          "Rabo De Toro",
+          "Curry",
+          "Cebolla Encurtida",
+          "Mayonesa"
+        ],
+        "precio": 11.9,
+        "familia": "Carne",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Coulant de Chocolate",
+        "tipo": "Postre",
+        "ingredientes": [
+          "Chocolate",
+          "Helado De Vainilla",
+          "Nueces",
+          "Kitkat"
+        ],
+        "precio": 5.9,
+        "familia": "Helado",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Lomo Ibérico",
+        "tipo": "Primer plato",
+        "ingredientes": [
+          "Lomo Ibérico"
+        ],
+        "precio": 12.5,
+        "familia": "Carne",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Surtido de Quesos",
+        "tipo": "Entrante",
+        "ingredientes": [
+          "Queso Parmesano",
+          "Queso Holandés",
+          "Queso Camembert"
+        ],
+        "precio": 17.9,
+        "familia": "Embutido",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Cremoso de Zújar",
+        "tipo": "Postre",
+        "ingredientes": [
+          "Queso Crema"
+        ],
+        "precio": 14.9,
+        "familia": "Lácteos",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Patatas Bravas",
+        "tipo": "Entrante",
+        "ingredientes": [
+          "Patata",
+          "Alioli",
+          "Salsa"
+        ],
+        "precio": 7.9,
+        "familia": "Fritos",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Croquetas Golfines (6 uds)",
+        "tipo": "Entrante",
+        "ingredientes": [
+          "Queso",
+          "Nueces",
+          "Compota De Cebolla"
+        ],
+        "precio": 8.9,
+        "familia": "Fritos",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Canelón de Carrillera",
+        "tipo": "Primer plato",
+        "ingredientes": [
+          "Carrillera",
+          "Setas",
+          "Salsa Bechamel"
+        ],
+        "precio": 5.5,
+        "familia": "Carne",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Arroz Seco de Presa",
+        "tipo": "Primer plato",
+        "ingredientes": [
+          "Presa Ibérica",
+          "Trigueros",
+          "Setas",
+          "Ali-Oli De Soja",
+          "Arroz"
+        ],
+        "precio": 19.9,
+        "familia": "Arroz",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Risotto",
+        "tipo": "Primer plato",
+        "ingredientes": [
+          "Jamón",
+          "Pera",
+          "Queso Gorgonzola",
+          "Arroz"
+        ],
+        "precio": 14.9,
+        "familia": "Arroz",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Bacalao",
+        "tipo": "Segundo plato",
+        "ingredientes": [
+          "Bacalao",
+          "Pimiento",
+          "Salsa Pil Pil"
+        ],
+        "precio": 16.9,
+        "familia": "Pescado",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Wok de Pluma",
+        "tipo": "Primer plato",
+        "ingredientes": [
+          "Pluma Ibérica",
+          "Fideos Arroz",
+          "Salsa"
+        ],
+        "precio": 14.9,
+        "familia": "Carne",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Ensalada de Bogavante",
+        "tipo": "Entrante",
+        "ingredientes": ["Bogavante", "Lechuga", "Tomate", "Aceite de Oliva"],
+        "precio": 18.0,
+        "familia": "Mariscos",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Tartar de Atún Rojo",
+        "tipo": "Entrante",
+        "ingredientes": ["Atún rojo", "Aguacate", "Sésamo", "Soja"],
+        "precio": 16.0,
+        "familia": "Pescado",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Sopa de Pescado",
+        "tipo": "Primer plato",
+        "ingredientes": ["Pescado", "Mariscos", "Tomate", "Cebolla"],
+        "precio": 10.0,
+        "familia": "Pescado",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Vichyssoise",
+        "tipo": "Primer plato",
+        "ingredientes": ["Puerro", "Patata", "Nata", "Cebolla"],
+        "precio": 8.0,
+        "familia": "Vegetal",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Raviolis de Setas",
+        "tipo": "Primer plato",
+        "ingredientes": ["Pasta", "Setas", "Queso", "Nata"],
+        "precio": 12.0,
+        "familia": "Vegetal",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Solomillo al Pedro Ximénez",
+        "tipo": "Segundo plato",
+        "ingredientes": ["Solomillo", "Pedro Ximénez", "Pasas", "Patata"],
+        "precio": 22.0,
+        "familia": "Carne",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Dorada a la Sal",
+        "tipo": "Segundo plato",
+        "ingredientes": ["Dorada", "Sal", "Aceite de Oliva"],
+        "precio": 19.0,
+        "familia": "Pescado",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Cochinillo Asado",
+        "tipo": "Segundo plato",
+        "ingredientes": ["Cochinillo", "Patata", "Aceite de Oliva"],
+        "precio": 24.0,
+        "familia": "Carne",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Tarta de Queso",
+        "tipo": "Postre",
+        "ingredientes": ["Queso", "Huevo", "Azúcar", "Galleta"],
+        "precio": 6.0,
+        "familia": "Lácteos",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Helado de Pistacho",
+        "tipo": "Postre",
+        "ingredientes": ["Pistacho", "Leche", "Azúcar"],
+        "precio": 5.0,
+        "familia": "Helado",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Fruta Fresca",
+        "tipo": "Postre",
+        "ingredientes": ["Fruta variada"],
+        "precio": 4.0,
+        "familia": "Fruta",
+        "vegano": true,
+        "sin_gluten": true
+      }
+    ]
+  },
+  {
+    "_id": "BOS Restaurante",
+    "platos": [
+      {
+        "nombre": "Carpaccio Extremeño",
+        "tipo": "Entrante",
+        "ingredientes": [
+          "Ternera",
+          "Queso",
+          "Hígado De Pato"
+        ],
+        "precio": 12.4,
+        "familia": "Carne",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Hamburguesa Retinta",
+        "tipo": "Primer plato",
+        "ingredientes": [
+          "Carne Retinta",
+          "Queso Cheddar",
+          "Bacon",
+          "Cebolla Crujiente",
+          "Huevo",
+          "Salsa"
+        ],
+        "precio": 13.9,
+        "familia": "Carne",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Pata de pulpo con crema de boniato",
+        "tipo": "Primer plato",
+        "ingredientes": [
+          "Pulpo",
+          "Boniato",
+          "Caramelo De Pimentón"
+        ],
+        "precio": 19.9,
+        "familia": "Mariscos",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Arroz Meloso de Setas con Aceite de Albahaca",
+        "tipo": "Primer plato",
+        "ingredientes": [
+          "Arroz",
+          "Setas",
+          "Aceite De Albahaca"
+        ],
+        "precio": 12.9,
+        "familia": "Arroz",
+        "vegano": true,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Lomo de Atún con Teriyaki",
+        "tipo": "Primer plato",
+        "ingredientes": [
+          "Atún",
+          "Salsa"
+        ],
+        "precio": 14.9,
+        "familia": "Pescado",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Bacalao Gratinado",
+        "tipo": "Primer plato",
+        "ingredientes": [
+          "Bacalao",
+          "Alioli",
+          "Miel"
+        ],
+        "precio": 18.9,
+        "familia": "Pescado",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Entrecot de Ternera",
+        "tipo": "Segundo plato",
+        "ingredientes": [
+          "Ternera",
+          "Sal",
+          "Pimienta",
+          "Aceite de Oliva"
+        ],
+        "precio": 22.0,
+        "familia": "Carne",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Tarta de Manzana",
+        "tipo": "Postre",
+        "ingredientes": [
+          "Manzana",
+          "Harina",
+          "Azúcar",
+          "Huevo"
+        ],
+        "precio": 6.0,
+        "familia": "Lácteos",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Ensalada de Burrata",
+        "tipo": "Entrante",
+        "ingredientes": [
+          "Burrata",
+          "Tomate",
+          "Albahaca",
+          "Aceite de Oliva"
+        ],
+        "precio": 11.0,
+        "familia": "Lácteos",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Coulant de Avellana",
+        "tipo": "Postre",
+        "ingredientes": [
+          "Avellana",
+          "Chocolate",
+          "Huevo",
+          "Azúcar"
+        ],
+        "precio": 7.0,
+        "familia": "Lácteos",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Ensalada César",
+        "tipo": "Entrante",
+        "ingredientes": ["Lechuga", "Pollo", "Queso Parmesano", "Picatostes", "Salsa César"],
+        "precio": 9.0,
+        "familia": "Vegetal",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Tartar de Ternera",
+        "tipo": "Entrante",
+        "ingredientes": ["Ternera", "Mostaza", "Alcaparras", "Yema de huevo"],
+        "precio": 13.0,
+        "familia": "Carne",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Gazpacho de Sandía",
+        "tipo": "Primer plato",
+        "ingredientes": ["Sandía", "Tomate", "Pepino", "Aceite de Oliva"],
+        "precio": 6.5,
+        "familia": "Vegetal",
+        "vegano": true,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Sopa de Marisco",
+        "tipo": "Primer plato",
+        "ingredientes": ["Mariscos", "Pescado", "Tomate", "Cebolla"],
+        "precio": 8.5,
+        "familia": "Mariscos",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Risotto de Setas",
+        "tipo": "Primer plato",
+        "ingredientes": ["Arroz", "Setas", "Queso Parmesano", "Cebolla"],
+        "precio": 11.0,
+        "familia": "Arroz",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Solomillo a la Pimienta",
+        "tipo": "Segundo plato",
+        "ingredientes": ["Solomillo", "Pimienta", "Nata", "Patata"],
+        "precio": 20.0,
+        "familia": "Carne",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Lubina al Horno",
+        "tipo": "Segundo plato",
+        "ingredientes": ["Lubina", "Patata", "Cebolla", "Aceite de Oliva"],
+        "precio": 18.0,
+        "familia": "Pescado",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Carrillera Ibérica",
+        "tipo": "Segundo plato",
+        "ingredientes": ["Carrillera", "Vino Tinto", "Zanahoria", "Cebolla"],
+        "precio": 17.0,
+        "familia": "Carne",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Tarta de Queso",
+        "tipo": "Postre",
+        "ingredientes": ["Queso", "Huevo", "Azúcar", "Galleta"],
+        "precio": 6.0,
+        "familia": "Lácteos",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Helado de Café",
+        "tipo": "Postre",
+        "ingredientes": ["Leche", "Café", "Azúcar"],
+        "precio": 5.0,
+        "familia": "Helado",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Fruta de Temporada",
+        "tipo": "Postre",
+        "ingredientes": ["Fruta variada"],
+        "precio": 4.0,
+        "familia": "Fruta",
+        "vegano": true,
+        "sin_gluten": true
+      }
+    ]
+  },
+  {
+    "_id": "Torre de Sande",
+    "platos": [
+      {
+        "nombre": "Iberian Sausages Puro Extrem",
+        "tipo": "Entrante",
+        "ingredientes": [
+          "Embutidos Ibéricos"
+        ],
+        "precio": 20.0,
+        "familia": "Embutido",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Grilled scallop with coconut sauce",
+        "tipo": "Primer plato",
+        "ingredientes": [
+          "Vieira",
+          "Coco",
+          "Hierbas Aromáticas"
+        ],
+        "precio": 8.0,
+        "familia": "Mariscos",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Chocolate Cake",
+        "tipo": "Postre",
+        "ingredientes": [
+          "Chocolate",
+          "Azúcar",
+          "Harina",
+          "Huevo"
+        ],
+        "precio": 5.0,
+        "familia": "Helado",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Russian Salad",
+        "tipo": "Entrante",
+        "ingredientes": [
+          "Patata",
+          "Zanahoria",
+          "Huevo",
+          "Atún",
+          "Mayonesa"
+        ],
+        "precio": 12.0,
+        "familia": "Vegetal",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Beef Steak Tartar",
+        "tipo": "Primer plato",
+        "ingredientes": [
+          "Ternera",
+          "Mostaza",
+          "Huevo",
+          "Aceite De Oliva"
+        ],
+        "precio": 27.0,
+        "familia": "Carne",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Secreto Ibérico a la Brasa",
+        "tipo": "Segundo plato",
+        "ingredientes": [
+          "Secreto Ibérico",
+          "Sal",
+          "Pimienta"
+        ],
+        "precio": 19.0,
+        "familia": "Carne",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Gazpacho de Sandía",
+        "tipo": "Primer plato",
+        "ingredientes": [
+          "Sandía",
+          "Tomate",
+          "Pepino",
+          "Aceite de Oliva"
+        ],
+        "precio": 6.5,
+        "familia": "Vegetal",
+        "vegano": true,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Helado Artesano de Turrón",
+        "tipo": "Postre",
+        "ingredientes": [
+          "Turrón",
+          "Leche",
+          "Azúcar"
+        ],
+        "precio": 5.5,
+        "familia": "Helado",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Ensalada de Tomate y Ventresca",
+        "tipo": "Entrante",
+        "ingredientes": ["Tomate", "Ventresca", "Cebolla", "Aceite de Oliva"],
+        "precio": 10.0,
+        "familia": "Pescado",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Tartar de Salmón",
+        "tipo": "Entrante",
+        "ingredientes": ["Salmón", "Aguacate", "Sésamo", "Soja"],
+        "precio": 12.0,
+        "familia": "Pescado",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Vichyssoise",
+        "tipo": "Primer plato",
+        "ingredientes": ["Puerro", "Patata", "Nata", "Cebolla"],
+        "precio": 8.0,
+        "familia": "Vegetal",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Raviolis de Setas",
+        "tipo": "Primer plato",
+        "ingredientes": ["Pasta", "Setas", "Queso", "Nata"],
+        "precio": 12.0,
+        "familia": "Vegetal",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Solomillo al Pedro Ximénez",
+        "tipo": "Segundo plato",
+        "ingredientes": ["Solomillo", "Pedro Ximénez", "Pasas", "Patata"],
+        "precio": 22.0,
+        "familia": "Carne",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Dorada a la Sal",
+        "tipo": "Segundo plato",
+        "ingredientes": ["Dorada", "Sal", "Aceite de Oliva"],
+        "precio": 19.0,
+        "familia": "Pescado",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Cochinillo Asado",
+        "tipo": "Segundo plato",
+        "ingredientes": ["Cochinillo", "Patata", "Aceite de Oliva"],
+        "precio": 24.0,
+        "familia": "Carne",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Tarta de Queso",
+        "tipo": "Postre",
+        "ingredientes": ["Queso", "Huevo", "Azúcar", "Galleta"],
+        "precio": 6.0,
+        "familia": "Lácteos",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Helado de Pistacho",
+        "tipo": "Postre",
+        "ingredientes": ["Pistacho", "Leche", "Azúcar"],
+        "precio": 5.0,
+        "familia": "Helado",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Fruta Fresca",
+        "tipo": "Postre",
+        "ingredientes": ["Fruta variada"],
+        "precio": 4.0,
+        "familia": "Fruta",
+        "vegano": true,
+        "sin_gluten": true
+      }
+    ]
+  },
+  {
+    "_id": "Casa Claudio",
+    "platos": [
+      {
+        "nombre": "Jamón Ibérico Luxury",
+        "tipo": "Entrante",
+        "ingredientes": [
+          "Jamón Ibérico",
+          "Pan Cristal",
+          "Tomate"
+        ],
+        "precio": 33.0,
+        "familia": "Embutido",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Carpaccio de Solomillo",
+        "tipo": "Entrante",
+        "ingredientes": [
+          "Solomillo",
+          "Foie",
+          "Trufa",
+          "Chalotas"
+        ],
+        "precio": 25.0,
+        "familia": "Carne",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Pulpo a la Brasa",
+        "tipo": "Segundo plato",
+        "ingredientes": [
+          "Pulpo",
+          "Torreznos",
+          "Mayonesa Kimchi"
+        ],
+        "precio": 22.5,
+        "familia": "Mariscos",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Croqueta de Gamba Roja",
+        "tipo": "Entrante",
+        "ingredientes": [
+          "Gamba Roja",
+          "Harina",
+          "Leche",
+          "Pan Rallado"
+        ],
+        "precio": 18.0,
+        "familia": "Mariscos",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Arroz Meloso de Carabineros",
+        "tipo": "Segundo plato",
+        "ingredientes": [
+          "Arroz",
+          "Carabinero",
+          "Alioli"
+        ],
+        "precio": 23.0,
+        "familia": "Arroz",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Lomo de Bacalao Gratinado",
+        "tipo": "Segundo plato",
+        "ingredientes": [
+          "Bacalao",
+          "Alioli de Miel",
+          "Morro de Cerdo"
+        ],
+        "precio": 25.0,
+        "familia": "Pescado",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Solomillo de Ternera con Foie",
+        "tipo": "Segundo plato",
+        "ingredientes": [
+          "Solomillo",
+          "Foie",
+          "Crema Trufada"
+        ],
+        "precio": 27.0,
+        "familia": "Carne",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Tarta de Queso Melosa",
+        "tipo": "Postre",
+        "ingredientes": [
+          "Queso",
+          "Helado de Galleta"
+        ],
+        "precio": 7.5,
+        "familia": "Lácteos",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Milhojas de Pistacho",
+        "tipo": "Postre",
+        "ingredientes": [
+          "Pistacho",
+          "Chocolate Blanco",
+          "Lima"
+        ],
+        "precio": 8.0,
+        "familia": "Helado",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "5 Chocolates en Texturas",
+        "tipo": "Postre",
+        "ingredientes": [
+          "Chocolate",
+          "Cacao",
+          "Leche",
+          "Mantequilla"
+        ],
+        "precio": 8.0,
+        "familia": "Lácteos",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Cheesecake de Torta del Casar",
+        "tipo": "Postre",
+        "ingredientes": [
+          "Torta Del Casar",
+          "Mermelada De Membrillo",
+          "Galleta"
+        ],
+        "precio": 8.0,
+        "familia": "Lácteos",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Sopa Castellana",
+        "tipo": "Primer plato",
+        "ingredientes": [
+          "Pan",
+          "Ajo",
+          "Huevo",
+          "Jamón",
+          "Caldo"
+        ],
+        "precio": 9.0,
+        "familia": "Vegetal",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Ensalada de Pulpo",
+        "tipo": "Entrante",
+        "ingredientes": ["Pulpo", "Patata", "Pimiento", "Aceite de Oliva"],
+        "precio": 14.0,
+        "familia": "Mariscos",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Queso de Cabra Gratinado",
+        "tipo": "Entrante",
+        "ingredientes": ["Queso de cabra", "Miel", "Nueces", "Pan"],
+        "precio": 10.0,
+        "familia": "Lácteos",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Gazpacho de Sandía",
+        "tipo": "Primer plato",
+        "ingredientes": ["Sandía", "Tomate", "Pepino", "Aceite de Oliva"],
+        "precio": 6.5,
+        "familia": "Vegetal",
+        "vegano": true,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Risotto de Setas",
+        "tipo": "Primer plato",
+        "ingredientes": ["Arroz", "Setas", "Queso Parmesano", "Cebolla"],
+        "precio": 11.0,
+        "familia": "Arroz",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Vichyssoise",
+        "tipo": "Primer plato",
+        "ingredientes": ["Puerro", "Patata", "Nata", "Cebolla"],
+        "precio": 8.0,
+        "familia": "Vegetal",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Merluza a la Vasca",
+        "tipo": "Segundo plato",
+        "ingredientes": ["Merluza", "Guisantes", "Espárragos", "Almejas"],
+        "precio": 16.0,
+        "familia": "Pescado",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Pollo al Ajillo",
+        "tipo": "Segundo plato",
+        "ingredientes": ["Pollo", "Ajo", "Aceite de Oliva", "Vino Blanco"],
+        "precio": 13.0,
+        "familia": "Carne",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Carrillera Ibérica",
+        "tipo": "Segundo plato",
+        "ingredientes": ["Carrillera", "Vino Tinto", "Zanahoria", "Cebolla"],
+        "precio": 15.0,
+        "familia": "Carne",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Tarta de Limón",
+        "tipo": "Postre",
+        "ingredientes": ["Limón", "Leche condensada", "Galleta"],
+        "precio": 6.0,
+        "familia": "Lácteos",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Helado de Café",
+        "tipo": "Postre",
+        "ingredientes": ["Leche", "Café", "Azúcar"],
+        "precio": 5.0,
+        "familia": "Helado",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Fruta de Temporada",
+        "tipo": "Postre",
+        "ingredientes": ["Fruta variada"],
+        "precio": 4.0,
+        "familia": "Fruta",
+        "vegano": true,
+        "sin_gluten": true
+      }
+    ]
+  },
+  {
+    "_id": "La Minerva",
+    "platos": [
+      {
+        "nombre": "Arroz de la Dehesa",
+        "tipo": "Segundo plato",
+        "ingredientes": [
+          "Arroz",
+          "Secreto Ibérico",
+          "Setas"
+        ],
+        "precio": 18.0,
+        "familia": "Arroz",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Fideuá Marinera",
+        "tipo": "Primer plato",
+        "ingredientes": [
+          "Fideos",
+          "Chipirón",
+          "Ajo",
+          "Tinta De Calamar"
+        ],
+        "precio": 15.0,
+        "familia": "Mariscos",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Tarta de Queso Don Manuel",
+        "tipo": "Postre",
+        "ingredientes": [
+          "Queso",
+          "Fresa",
+          "Chocolate Blanco"
+        ],
+        "precio": 8.0,
+        "familia": "Lácteos",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Tabla de Quesos",
+        "tipo": "Entrante",
+        "ingredientes": [
+          "Queso Manchego",
+          "Queso Azul",
+          "Queso de Cabra"
+        ],
+        "precio": 12.0,
+        "familia": "Lácteos",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Ensalada César",
+        "tipo": "Entrante",
+        "ingredientes": [
+          "Lechuga",
+          "Pollo",
+          "Queso Parmesano",
+          "Picatostes",
+          "Salsa César"
+        ],
+        "precio": 9.0,
+        "familia": "Vegetal",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Crema de Espárragos",
+        "tipo": "Primer plato",
+        "ingredientes": [
+          "Espárragos",
+          "Nata",
+          "Cebolla",
+          "Caldo"
+        ],
+        "precio": 7.5,
+        "familia": "Vegetal",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Pulpo a la Brasa",
+        "tipo": "Segundo plato",
+        "ingredientes": [
+          "Pulpo",
+          "Pimentón",
+          "Aceite de Oliva"
+        ],
+        "precio": 17.0,
+        "familia": "Mariscos",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Tiramisú",
+        "tipo": "Postre",
+        "ingredientes": [
+          "Queso Mascarpone",
+          "Café",
+          "Bizcocho",
+          "Cacao"
+        ],
+        "precio": 6.0,
+        "familia": "Lácteos",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Gazpacho Andaluz",
+        "tipo": "Primer plato",
+        "ingredientes": ["Tomate", "Pepino", "Pimiento", "Ajo", "Aceite de Oliva"],
+        "precio": 7.0,
+        "familia": "Vegetal",
+        "vegano": true,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Sopa de Pescado",
+        "tipo": "Primer plato",
+        "ingredientes": ["Pescado", "Mariscos", "Tomate", "Cebolla"],
+        "precio": 10.0,
+        "familia": "Pescado",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Solomillo al Pedro Ximénez",
+        "tipo": "Segundo plato",
+        "ingredientes": ["Solomillo", "Pedro Ximénez", "Pasas", "Patata"],
+        "precio": 22.0,
+        "familia": "Carne",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Dorada a la Sal",
+        "tipo": "Segundo plato",
+        "ingredientes": ["Dorada", "Sal", "Aceite de Oliva"],
+        "precio": 19.0,
+        "familia": "Pescado",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Cochinillo Asado",
+        "tipo": "Segundo plato",
+        "ingredientes": ["Cochinillo", "Patata", "Aceite de Oliva"],
+        "precio": 24.0,
+        "familia": "Carne",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Tarta de Limón",
+        "tipo": "Postre",
+        "ingredientes": ["Limón", "Leche condensada", "Galleta"],
+        "precio": 6.0,
+        "familia": "Lácteos",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Helado de Pistacho",
+        "tipo": "Postre",
+        "ingredientes": ["Pistacho", "Leche", "Azúcar"],
+        "precio": 5.0,
+        "familia": "Helado",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Fruta Fresca",
+        "tipo": "Postre",
+        "ingredientes": ["Fruta variada"],
+        "precio": 4.0,
+        "familia": "Fruta",
+        "vegano": true,
+        "sin_gluten": true
+      }
+    ]
+  },
+  {
+    "_id": "Origen",
+    "platos": [
+      {
+        "nombre": "Tataki de Atún",
+        "tipo": "Segundo plato",
+        "ingredientes": [
+          "Atún",
+          "Soja",
+          "Wakame",
+          "Sésamo"
+        ],
+        "precio": 17.0,
+        "familia": "Pescado",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Mousse de Chocolate Blanco",
+        "tipo": "Postre",
+        "ingredientes": [
+          "Chocolate Blanco",
+          "Filipinos"
+        ],
+        "precio": 7.5,
+        "familia": "Helado",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Hamburguesa de No Carne",
+        "tipo": "Segundo plato",
+        "ingredientes": [
+          "Pan",
+          "Proteína Vegetal",
+          "Guacamole",
+          "Brotes Tiernos"
+        ],
+        "precio": 16.0,
+        "familia": "Vegetal",
+        "vegano": true,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Hummus de Garbanzo",
+        "tipo": "Entrante",
+        "ingredientes": [
+          "Garbanzo",
+          "Tahini",
+          "Limón",
+          "Aceite de Oliva"
+        ],
+        "precio": 7.0,
+        "familia": "Vegetal",
+        "vegano": true,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Crema de Calabacín",
+        "tipo": "Primer plato",
+        "ingredientes": [
+          "Calabacín",
+          "Patata",
+          "Cebolla",
+          "Aceite de Oliva"
+        ],
+        "precio": 8.0,
+        "familia": "Vegetal",
+        "vegano": true,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Ensalada de Brotes y Frutos Secos",
+        "tipo": "Entrante",
+        "ingredientes": [
+          "Brotes tiernos",
+          "Nueces",
+          "Pasas",
+          "Vinagreta"
+        ],
+        "precio": 8.0,
+        "familia": "Vegetal",
+        "vegano": true,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Tarta de Zanahoria Vegana",
+        "tipo": "Postre",
+        "ingredientes": [
+          "Zanahoria",
+          "Harina Integral",
+          "Nueces",
+          "Aceite de Coco"
+        ],
+        "precio": 6.5,
+        "familia": "Lácteos",
+        "vegano": true,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Gazpacho Andaluz Vegano",
+        "tipo": "Primer plato",
+        "ingredientes": [
+          "Tomate",
+          "Pepino",
+          "Pimiento",
+          "Ajo",
+          "Aceite de Oliva"
+        ],
+        "precio": 6.5,
+        "familia": "Vegetal",
+        "vegano": true,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Gazpacho de Remolacha",
+        "tipo": "Entrante",
+        "ingredientes": ["Remolacha", "Tomate", "Pepino", "Aceite de Oliva"],
+        "precio": 6.0,
+        "familia": "Vegetal",
+        "vegano": true,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Rollitos de Primavera Veganos",
+        "tipo": "Entrante",
+        "ingredientes": ["Masa de arroz", "Verduras", "Soja"],
+        "precio": 7.0,
+        "familia": "Vegetal",
+        "vegano": true,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Carpaccio de Calabacín",
+        "tipo": "Entrante",
+        "ingredientes": ["Calabacín", "Aceite de Oliva", "Limón", "Pimienta"],
+        "precio": 6.5,
+        "familia": "Vegetal",
+        "vegano": true,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Sopa Thai Vegana",
+        "tipo": "Primer plato",
+        "ingredientes": ["Leche de coco", "Setas", "Tofu", "Cilantro"],
+        "precio": 8.0,
+        "familia": "Vegetal",
+        "vegano": true,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Ensalada de Lentejas",
+        "tipo": "Primer plato",
+        "ingredientes": ["Lentejas", "Tomate", "Cebolla", "Pimiento"],
+        "precio": 7.0,
+        "familia": "Vegetal",
+        "vegano": true,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Crema de Zanahoria y Naranja",
+        "tipo": "Primer plato",
+        "ingredientes": ["Zanahoria", "Naranja", "Cebolla", "Aceite de Oliva"],
+        "precio": 7.5,
+        "familia": "Vegetal",
+        "vegano": true,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Albóndigas Veganas",
+        "tipo": "Segundo plato",
+        "ingredientes": ["Soja texturizada", "Tomate", "Cebolla", "Ajo"],
+        "precio": 10.0,
+        "familia": "Vegetal",
+        "vegano": true,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Tofu al Curry",
+        "tipo": "Segundo plato",
+        "ingredientes": ["Tofu", "Curry", "Leche de coco", "Verduras"],
+        "precio": 11.0,
+        "familia": "Vegetal",
+        "vegano": true,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Pizza Vegana",
+        "tipo": "Segundo plato",
+        "ingredientes": ["Masa", "Tomate", "Queso vegano", "Verduras"],
+        "precio": 12.0,
+        "familia": "Vegetal",
+        "vegano": true,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Pastel de Calabaza Vegano",
+        "tipo": "Postre",
+        "ingredientes": ["Calabaza", "Harina", "Azúcar", "Canela"],
+        "precio": 5.0,
+        "familia": "Lácteos",
+        "vegano": true,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Macedonia de Frutas",
+        "tipo": "Postre",
+        "ingredientes": ["Frutas variadas"],
+        "precio": 4.0,
+        "familia": "Fruta",
+        "vegano": true,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Tarta de Manzana Vegana",
+        "tipo": "Postre",
+        "ingredientes": ["Manzana", "Harina", "Azúcar", "Aceite de Coco"],
+        "precio": 5.5,
+        "familia": "Lácteos",
+        "vegano": true,
+        "sin_gluten": false
+      }
+    ]
+  },
+  {
+    "_id": "Marisquería Atlántico",
+    "platos": [
+      {
+        "nombre": "Gambas al Ajillo",
+        "tipo": "Entrante",
+        "ingredientes": ["Gambas", "Ajo", "Aceite de Oliva", "Guindilla"],
+        "precio": 12.0,
+        "familia": "Mariscos",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Mejillones a la Marinera",
+        "tipo": "Entrante",
+        "ingredientes": ["Mejillones", "Cebolla", "Tomate", "Vino Blanco"],
+        "precio": 10.0,
+        "familia": "Mariscos",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Tartar de Atún",
+        "tipo": "Entrante",
+        "ingredientes": ["Atún", "Aguacate", "Sésamo", "Soja"],
+        "precio": 14.0,
+        "familia": "Pescado",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Ensalada de Pulpo",
+        "tipo": "Entrante",
+        "ingredientes": ["Pulpo", "Patata", "Pimiento", "Aceite de Oliva"],
+        "precio": 13.0,
+        "familia": "Mariscos",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Croquetas de Marisco",
+        "tipo": "Entrante",
+        "ingredientes": ["Marisco", "Harina", "Leche", "Pan rallado"],
+        "precio": 9.0,
+        "familia": "Mariscos",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Sopa de Pescado",
+        "tipo": "Primer plato",
+        "ingredientes": ["Pescado", "Mariscos", "Tomate", "Cebolla"],
+        "precio": 11.0,
+        "familia": "Pescado",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Arroz Caldoso de Bogavante",
+        "tipo": "Primer plato",
+        "ingredientes": ["Arroz", "Bogavante", "Pimiento", "Ajo"],
+        "precio": 18.0,
+        "familia": "Mariscos",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Fideuá de Marisco",
+        "tipo": "Primer plato",
+        "ingredientes": ["Fideos", "Mariscos", "Caldo de Pescado"],
+        "precio": 15.0,
+        "familia": "Mariscos",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Ensalada de Algas",
+        "tipo": "Primer plato",
+        "ingredientes": ["Algas", "Pepino", "Vinagre", "Sésamo"],
+        "precio": 9.0,
+        "familia": "Vegetal",
+        "vegano": true,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Gazpacho de Marisco",
+        "tipo": "Primer plato",
+        "ingredientes": ["Mariscos", "Tomate", "Pepino", "Pimiento"],
+        "precio": 10.0,
+        "familia": "Mariscos",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Lubina a la Sal",
+        "tipo": "Segundo plato",
+        "ingredientes": ["Lubina", "Sal", "Aceite de Oliva"],
+        "precio": 20.0,
+        "familia": "Pescado",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Arroz Negro",
+        "tipo": "Segundo plato",
+        "ingredientes": ["Arroz", "Tinta de Calamar", "Calamares", "Ajo"],
+        "precio": 17.0,
+        "familia": "Arroz",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Zarzuela de Mariscos",
+        "tipo": "Segundo plato",
+        "ingredientes": ["Mariscos variados", "Pescado", "Tomate", "Ajo"],
+        "precio": 22.0,
+        "familia": "Mariscos",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Dorada al Horno",
+        "tipo": "Segundo plato",
+        "ingredientes": ["Dorada", "Patata", "Cebolla", "Aceite de Oliva"],
+        "precio": 19.0,
+        "familia": "Pescado",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Caldereta de Langosta",
+        "tipo": "Segundo plato",
+        "ingredientes": ["Langosta", "Patata", "Cebolla", "Pimiento"],
+        "precio": 28.0,
+        "familia": "Mariscos",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Tarta de Queso con Frambuesa",
+        "tipo": "Postre",
+        "ingredientes": ["Queso", "Frambuesa", "Galleta", "Azúcar"],
+        "precio": 6.0,
+        "familia": "Lácteos",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Helado de Limón",
+        "tipo": "Postre",
+        "ingredientes": ["Limón", "Leche", "Azúcar"],
+        "precio": 4.5,
+        "familia": "Helado",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Fruta de Temporada",
+        "tipo": "Postre",
+        "ingredientes": ["Fruta variada"],
+        "precio": 4.0,
+        "familia": "Fruta",
+        "vegano": true,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Tarta de Santiago",
+        "tipo": "Postre",
+        "ingredientes": ["Almendra", "Azúcar", "Huevo", "Limón"],
+        "precio": 5.0,
+        "familia": "Lácteos",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Natillas Caseras",
+        "tipo": "Postre",
+        "ingredientes": ["Leche", "Huevo", "Azúcar", "Canela"],
+        "precio": 4.5,
+        "familia": "Lácteos",
+        "vegano": false,
+        "sin_gluten": true
+      }
+    ]
+  },
+  {
+    "_id": "Fusión Oriental",
+    "platos": [
+      {
+        "nombre": "Gyozas de Verduras",
+        "tipo": "Entrante",
+        "ingredientes": ["Masa", "Verduras", "Soja"],
+        "precio": 7.0,
+        "familia": "Vegetal",
+        "vegano": true,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Edamame",
+        "tipo": "Entrante",
+        "ingredientes": ["Edamame", "Sal"],
+        "precio": 5.0,
+        "familia": "Vegetal",
+        "vegano": true,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Tempura de Langostinos",
+        "tipo": "Entrante",
+        "ingredientes": ["Langostinos", "Harina", "Aceite"],
+        "precio": 9.0,
+        "familia": "Mariscos",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Ensalada Wakame",
+        "tipo": "Entrante",
+        "ingredientes": ["Wakame", "Sésamo", "Vinagre"],
+        "precio": 6.0,
+        "familia": "Vegetal",
+        "vegano": true,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Sopa Miso",
+        "tipo": "Entrante",
+        "ingredientes": ["Miso", "Tofu", "Cebolleta", "Alga Wakame"],
+        "precio": 5.5,
+        "familia": "Vegetal",
+        "vegano": true,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Ramen de Pollo",
+        "tipo": "Primer plato",
+        "ingredientes": ["Fideos", "Pollo", "Caldo", "Huevo"],
+        "precio": 12.0,
+        "familia": "Carne",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Pho Vietnamita",
+        "tipo": "Primer plato",
+        "ingredientes": ["Fideos de arroz", "Ternera", "Caldo", "Hierbas"],
+        "precio": 13.0,
+        "familia": "Carne",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Sopa Tom Yum",
+        "tipo": "Primer plato",
+        "ingredientes": ["Langostinos", "Setas", "Lima", "Hierbas"],
+        "precio": 11.0,
+        "familia": "Mariscos",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Pad Thai",
+        "tipo": "Primer plato",
+        "ingredientes": ["Fideos de arroz", "Tofu", "Cacahuete", "Brotes de soja"],
+        "precio": 12.0,
+        "familia": "Vegetal",
+        "vegano": true,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Ensalada de Mango Thai",
+        "tipo": "Primer plato",
+        "ingredientes": ["Mango", "Zanahoria", "Cacahuete", "Lima"],
+        "precio": 10.0,
+        "familia": "Fruta",
+        "vegano": true,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Pollo Teriyaki",
+        "tipo": "Segundo plato",
+        "ingredientes": ["Pollo", "Salsa Teriyaki", "Sésamo", "Arroz"],
+        "precio": 14.0,
+        "familia": "Carne",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Salmón al Vapor con Jengibre",
+        "tipo": "Segundo plato",
+        "ingredientes": ["Salmón", "Jengibre", "Salsa de Soja"],
+        "precio": 16.0,
+        "familia": "Pescado",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Curry Rojo Thai",
+        "tipo": "Segundo plato",
+        "ingredientes": ["Leche de coco", "Verduras", "Tofu", "Curry rojo"],
+        "precio": 13.0,
+        "familia": "Vegetal",
+        "vegano": true,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Pato Pekín",
+        "tipo": "Segundo plato",
+        "ingredientes": ["Pato", "Salsa Hoisin", "Cebolleta", "Tortitas"],
+        "precio": 18.0,
+        "familia": "Carne",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Langostinos al Curry Verde",
+        "tipo": "Segundo plato",
+        "ingredientes": ["Langostinos", "Curry verde", "Leche de coco"],
+        "precio": 15.0,
+        "familia": "Mariscos",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Helado de Té Verde",
+        "tipo": "Postre",
+        "ingredientes": ["Leche", "Té verde", "Azúcar"],
+        "precio": 5.0,
+        "familia": "Helado",
+        "vegano": false,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Mochi de Mango",
+        "tipo": "Postre",
+        "ingredientes": ["Arroz glutinoso", "Mango", "Azúcar"],
+        "precio": 4.5,
+        "familia": "Fruta",
+        "vegano": true,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Tarta de Sésamo Negro",
+        "tipo": "Postre",
+        "ingredientes": ["Sésamo negro", "Harina", "Azúcar"],
+        "precio": 5.5,
+        "familia": "Lácteos",
+        "vegano": false,
+        "sin_gluten": false
+      },
+      {
+        "nombre": "Fruta Fresca Oriental",
+        "tipo": "Postre",
+        "ingredientes": ["Fruta variada"],
+        "precio": 4.0,
+        "familia": "Fruta",
+        "vegano": true,
+        "sin_gluten": true
+      },
+      {
+        "nombre": "Pastel de Loto",
+        "tipo": "Postre",
+        "ingredientes": ["Semilla de loto", "Harina", "Azúcar"],
+        "precio": 5.0,
+        "familia": "Lácteos",
+        "vegano": false,
+        "sin_gluten": false
+      }
+    ]
+  }
+]

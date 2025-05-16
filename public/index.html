@@ -10,7 +10,6 @@
 <body>
   <h1>Busca tu comida</h1>
 
-  <!-- Nuevo formulario para buscar platos -->
   <form id="buscarPlato">
     <fieldset>
       <legend>Buscar plato por nombre:</legend>
@@ -20,10 +19,8 @@
     </fieldset>
   </form>
 
-  <!-- Resultados de la búsqueda de platos -->
   <div id="resultadoPlatos"></div>
 
-  <!-- Formulario existente -->
   <form id="busqueda">
     <fieldset>
       <legend>Nombre del restaurante:</legend>
@@ -74,19 +71,30 @@
   <div id="resultado"></div>
 
   <script>
-    const tiposDePlato = ["Entrante", "Principal", "Postre", "Guarnición", "Bebida"];
-    const familias = ["carne", "mariscos", "vegetal", "dulce", "pescado", "lácteos"];
 
     async function cargarIngredientes() {
-      const [resIngredientes, resRestaurantes] = await Promise.all([
+      const [resIngredientes, resRestaurantes, resFamilias, resTipos] = await Promise.all([
         fetch("/ingredientes"),
-        fetch("/restaurantes")
+        fetch("/restaurantes"),
+        fetch("/familias"),
+        fetch("/tipos")
       ]);
 
       const ingredientes = await resIngredientes.json();
       const restaurantes = await resRestaurantes.json();
+      const familias = await resFamilias.json();
+      const tiposDePlato = await resTipos.json();
+
       ingredientes.sort((a, b) => a.localeCompare(b));
       restaurantes.sort((a, b) => a.localeCompare(b));
+      familias.sort((a, b) => a.localeCompare(b));
+      const ordenPreferido = ["Entrante", "Primer plato", "Segundo plato", "Postre"];
+      tiposDePlato.sort((a, b) => {
+        const indexA = ordenPreferido.indexOf(a);
+        const indexB = ordenPreferido.indexOf(b);
+        return indexA - indexB;
+      });
+
 
       const incluirDiv = document.getElementById("incluir");
       const excluirDiv = document.getElementById("excluir");
@@ -140,7 +148,7 @@
             const platos = r.platos.filter(p => p.tipo === tipo);
             if (platos.length === 0) return '';
             return `
-          <h4>${tipo}s</h4>
+          <h4>${tipo}</h4>
           <ul>
             ${platos.map(p =>
               `<li><strong>${p.nombre}</strong> – ${p.precio.toFixed(2)}€ – ${p.ingredientes.join(", ")}${p.vegano ? " 🥦" : ""}${p.sin_gluten ? " 🚫 gluten" : ""}</li>`
@@ -200,7 +208,6 @@
 
     cargarIngredientes();
 
-    // Botón para limpiar búsqueda de platos
     document.getElementById("borrarBusquedaPlato").addEventListener("click", () => {
       document.getElementById("nombrePlato").value = "";
       const contenedor = document.getElementById("resultadoPlatos");
