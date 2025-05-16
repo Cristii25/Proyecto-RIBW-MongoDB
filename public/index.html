@@ -134,11 +134,21 @@
       div.style.display = "block";
       div.innerHTML = data.length === 0
         ? "<p>No se encontraron restaurantes.</p>"
-        : data.map(r =>
-          `<h3>${r._id}</h3><ul>${r.platos.map(p =>
-            `<li><strong>${p.nombre}</strong> – ${p.precio.toFixed(2)}€ – ${p.ingredientes.join(", ")}${p.vegano ? " 🥦" : ""}${p.sin_gluten ? " 🚫 gluten" : ""}</li>`
-          ).join("")}</ul>`
-        ).join("");
+        : data.map(r => {
+          const tipos = ["Entrante", "Primer plato", "Segundo plato", "Postre"];
+          const platosPorTipo = tipos.map(tipo => {
+            const platos = r.platos.filter(p => p.tipo === tipo);
+            if (platos.length === 0) return '';
+            return `
+          <h4>${tipo}s</h4>
+          <ul>
+            ${platos.map(p =>
+              `<li><strong>${p.nombre}</strong> – ${p.precio.toFixed(2)}€ – ${p.ingredientes.join(", ")}${p.vegano ? " 🥦" : ""}${p.sin_gluten ? " 🚫 gluten" : ""}</li>`
+            ).join("")}
+          </ul>`;
+          }).join("");
+          return `<h3>${r._id}</h3>${platosPorTipo}`;
+        }).join("");
     }
 
     async function buscarPlato() {
