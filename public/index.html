@@ -10,6 +10,7 @@
 <body>
   <h1>Busca tu comida</h1>
 
+  <!-- Formulario para buscar platos por nombre -->
   <form id="buscarPlato">
     <fieldset>
       <legend>Buscar plato por nombre:</legend>
@@ -19,8 +20,10 @@
     </fieldset>
   </form>
 
+  <!-- Aquí se muestran los resultados de la búsqueda de platos por nombre -->
   <div id="resultadoPlatos"></div>
 
+  <!-- Formulario principal para filtrar restaurantes y platos -->
   <form id="busqueda">
     <fieldset>
       <legend>Nombre del restaurante:</legend>
@@ -68,10 +71,11 @@
     <button type="button" id="limpiar">Limpiar filtros</button>
   </form>
 
+  <!-- Aquí se muestran los resultados de la búsqueda principal -->
   <div id="resultado"></div>
 
   <script>
-
+    // Carga los datos iniciales de ingredientes, restaurantes, familias y tipos de plato
     async function cargarIngredientes() {
       const [resIngredientes, resRestaurantes, resFamilias, resTipos] = await Promise.all([
         fetch("/ingredientes"),
@@ -85,6 +89,7 @@
       const familias = await resFamilias.json();
       const tiposDePlato = await resTipos.json();
 
+      // Ordena los datos para mostrarlos de forma más amigable
       ingredientes.sort((a, b) => a.localeCompare(b));
       restaurantes.sort((a, b) => a.localeCompare(b));
       familias.sort((a, b) => a.localeCompare(b));
@@ -95,7 +100,7 @@
         return indexA - indexB;
       });
 
-
+      // Inserta los ingredientes en los checkboxes de incluir y excluir
       const incluirDiv = document.getElementById("incluir");
       const excluirDiv = document.getElementById("excluir");
       const tipoDiv = document.getElementById("tipo");
@@ -107,19 +112,23 @@
         excluirDiv.innerHTML += `<label><input type="checkbox" name="excluir" value="${ing}"> ${ing}</label>`;
       });
 
+      // Inserta los tipos de plato en su sección correspondiente
       tiposDePlato.forEach(tipo => {
         tipoDiv.innerHTML += `<label><input type="checkbox" name="tipo" value="${tipo}"> ${tipo}</label>`;
       });
 
+      // Inserta las familias de platos
       familias.forEach(fam => {
         familiaDiv.innerHTML += `<label><input type="checkbox" name="familia" value="${fam}"> ${fam}</label>`;
       });
 
+      // Inserta los nombres de los restaurantes en el desplegable
       restaurantes.forEach(nombre => {
         selectRestaurante.innerHTML += `<option value="${nombre}">${nombre}</option>`;
       });
     }
 
+    // Realiza la búsqueda principal de restaurantes y platos según los filtros seleccionados
     async function buscar() {
       const nombreRestaurante = document.getElementById("nombreRestaurante").value;
       const incluir = Array.from(document.querySelectorAll('input[name="incluir"]:checked')).map(cb => cb.value);
@@ -130,6 +139,7 @@
       const sinGluten = document.getElementById("filtroSinGluten").checked;
       const ordenPrecio = document.getElementById("ordenPrecio").value;
 
+      // Envía la petición al backend con todos los filtros seleccionados
       const res = await fetch("/buscar", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -139,6 +149,7 @@
       const data = await res.json();
       const div = document.getElementById("resultado");
 
+      // Muestra los resultados agrupados por tipo de plato y restaurante
       div.style.display = "block";
       div.innerHTML = data.length === 0
         ? "<p>No se encontraron restaurantes.</p>"
@@ -159,9 +170,11 @@
         }).join("");
     }
 
+    // Realiza la búsqueda de platos por nombre usando el formulario superior
     async function buscarPlato() {
       const nombrePlato = document.getElementById("nombrePlato").value;
 
+      // Envía la petición al backend para buscar platos por nombre
       const res = await fetch("/buscar-plato", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -171,6 +184,7 @@
       const data = await res.json();
       const div = document.getElementById("resultadoPlatos");
 
+      // Muestra los resultados de la búsqueda de platos por nombre
       if (data.length === 0) {
         div.innerHTML = "<p>No se encontraron platos con ese nombre.</p>";
       } else {
@@ -188,11 +202,13 @@
       }
     }
 
+    // Evento para enviar el formulario principal de búsqueda
     document.getElementById("busqueda").addEventListener("submit", async (e) => {
       e.preventDefault();
       await buscar();
     });
 
+    // Evento para limpiar todos los filtros del formulario principal
     document.getElementById("limpiar").addEventListener("click", async () => {
       document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
       document.getElementById("ordenPrecio").value = "";
@@ -201,13 +217,16 @@
       document.getElementById("resultado").style.display = "none";
     });
 
+    // Evento para enviar el formulario de búsqueda de platos por nombre
     document.getElementById("buscarPlato").addEventListener("submit", async (e) => {
       e.preventDefault();
       await buscarPlato();
     });
 
+    // Carga los datos iniciales al cargar la página
     cargarIngredientes();
 
+    // Evento para limpiar el campo de búsqueda de platos por nombre y ocultar resultados
     document.getElementById("borrarBusquedaPlato").addEventListener("click", () => {
       document.getElementById("nombrePlato").value = "";
       const contenedor = document.getElementById("resultadoPlatos");
