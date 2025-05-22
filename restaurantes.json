@@ -5,7 +5,7 @@
       {
         "nombre": "Tartar de Salmón",
         "tipo": "Entrante",
-        "ingredientes": ["Salmón", "Aguacate", "Sésamo", "Salsa Soja"],
+        "ingredientes": ["Salmón", "Aguacate", "Sésamo", "Salsa de soja"],
         "precio": 12.0,
         "familia": "Pescado",
         "vegano": false,
@@ -14,7 +14,7 @@
       {
         "nombre": "Queso Manchego Curado",
         "tipo": "Entrante",
-        "ingredientes": ["Queso Manchego", "Aceite de Oliva"],
+        "ingredientes": ["Queso manchego", "Aceite de oliva"],
         "precio": 8.0,
         "familia": "Lácteos",
         "vegano": false,
@@ -50,7 +50,7 @@
         "ingredientes": [
           "Calamares",
           "Harina",
-          "Aceite de Oliva",
+          "Aceite de oliva",
           "Limón"
         ],
         "precio": 9.0,
@@ -66,7 +66,7 @@
           "Pepino",
           "Pimiento",
           "Ajo",
-          "Aceite De Oliva"
+          "Aceite de oliva"
         ],
         "precio": 7.5,
         "familia": "Vegetal",
@@ -134,7 +134,7 @@
           "Pulpo",
           "Patata",
           "Pimentón",
-          "Aceite De Oliva"
+          "Aceite de oliva"
         ],
         "precio": 18.0,
         "familia": "Mariscos",
@@ -153,7 +153,7 @@
       {
         "nombre": "Pollo al Ajillo",
         "tipo": "Segundo plato",
-        "ingredientes": ["Pollo", "Ajo", "Aceite de Oliva", "Vino Blanco"],
+        "ingredientes": ["Pollo", "Ajo", "Aceite de oliva", "Vino blanco"],
         "precio": 13.0,
         "familia": "Carne",
         "vegano": false,
@@ -162,7 +162,7 @@
       {
         "nombre": "Carrillera Ibérica",
         "tipo": "Segundo plato",
-        "ingredientes": ["Carrillera", "Vino Tinto", "Zanahoria", "Cebolla"],
+        "ingredientes": ["Carrillera", "Vino tinto", "Zanahoria", "Cebolla"],
         "precio": 15.0,
         "familia": "Carne",
         "vegano": false,
@@ -171,7 +171,7 @@
       {
         "nombre": "Lubina al Horno",
         "tipo": "Segundo plato",
-        "ingredientes": ["Lubina", "Patata", "Cebolla", "Aceite de Oliva"],
+        "ingredientes": ["Lubina", "Patata", "Cebolla", "Aceite de oliva"],
         "precio": 17.0,
         "familia": "Pescado",
         "vegano": false,
@@ -217,7 +217,7 @@
       {
         "nombre": "Fruta de Temporada",
         "tipo": "Postre",
-        "ingredientes": ["Fruta Variada"],
+        "ingredientes": ["Frutas variadas"],
         "precio": 3.5,
         "familia": "Fruta",
         "vegano": true,
@@ -238,7 +238,7 @@
     "_id": "Veggie Place",
     "platos": [
       {
-        "nombre": "Ensalada de quinoa",
+        "nombre": "Ensalada de Quinoa",
         "tipo": "Entrante",
         "ingredientes": [
           "Quinoa",
@@ -264,7 +264,7 @@
         "sin_gluten": false
       },
       {
-        "nombre": "Falafel con salsa tahini",
+        "nombre": "Falafel con Salsa Tahini",
         "tipo": "Entrante",
         "ingredientes": [
           "Garbanzos",
@@ -280,7 +280,7 @@
       {
         "nombre": "Gazpacho de Remolacha",
         "tipo": "Entrante",
-        "ingredientes": ["Remolacha", "Tomate", "Pepino", "Aceite de Oliva"],
+        "ingredientes": ["Remolacha", "Tomate", "Pepino", "Aceite de oliva"],
         "precio": 6.0,
         "familia": "Vegetal",
         "vegano": true,
@@ -298,7 +298,7 @@
       {
         "nombre": "Carpaccio de Calabacín",
         "tipo": "Primer plato",
-        "ingredientes": ["Calabacín", "Aceite de Oliva", "Limón", "Pimienta"],
+        "ingredientes": ["Calabacín", "Aceite de oliva", "Limón", "Pimienta"],
         "precio": 6.5,
         "familia": "Vegetal",
         "vegano": true,
@@ -309,7 +309,7 @@
         "tipo": "Segundo plato",
         "ingredientes": [
           "Pan",
-          "Soja Texturizada",
+          "Soja texturizada",
           "Lechuga",
           "Tomate",
           "Cebolla"
@@ -326,7 +326,7 @@
           "Calabaza",
           "Cebolla",
           "Zanahoria",
-          "Aceite de Oliva"
+          "Aceite de oliva"
         ],
         "precio": 7.0,
         "familia": "Vegetal",
@@ -340,7 +340,7 @@
           "Cacao",
           "Harina",
           "Nueces",
-          "Aceite de Coco"
+          "Aceite de coco"
         ],
         "precio": 5.0,
         "familia": "Lácteos",
@@ -354,7 +354,7 @@
           "Berenjena",
           "Calabacín",
           "Tomate",
-          "Queso Vegano"
+          "Queso vegano"
         ],
         "precio": 12.0,
         "familia": "Vegetal",
@@ -366,7 +366,7 @@
         "tipo": "Postre",
         "ingredientes": [
           "Mango",
-          "Leche de Coco",
+          "Leche de coco",
           "Azúcar"
         ],
         "precio": 4.5,
@@ -395,7 +395,7 @@
       {
         "nombre": "Crema de Zanahoria y Naranja",
         "tipo": "Primer plato",
-        "ingredientes": ["Zanahoria", "Naranja", "Cebolla", "Aceite de Oliva"],
+        "ingredientes": ["Zanahoria", "Naranja", "Cebolla", "Aceite de oliva"],
         "precio": 7.5,
         "familia": "Vegetal",
         "vegano": true,
@@ -449,7 +449,7 @@
       {
         "nombre": "Tarta de Manzana Vegana",
         "tipo": "Postre",
-        "ingredientes": ["Manzana", "Harina", "Azúcar", "Aceite de Coco"],
+        "ingredientes": ["Manzana", "Harina", "Azúcar", "Aceite de coco"],
         "precio": 5.5,
         "familia": "Lácteos",
         "vegano": true,
@@ -464,7 +464,7 @@
         "nombre": "Jamón Ibérico de Bellota",
         "tipo": "Entrante",
         "ingredientes": [
-          "Jamón Ibérico",
+          "Jamón ibérico",
           "Pan",
           "Tomate"
         ],
@@ -479,8 +479,8 @@
         "ingredientes": [
           "Tomate",
           "Pan",
-          "Jamón Ibérico",
-          "Helado De Queso"
+          "Jamón ibérico",
+          "Helado de queso"
         ],
         "precio": 9.9,
         "familia": "Vegetal",
@@ -488,12 +488,12 @@
         "sin_gluten": false
       },
       {
-        "nombre": "Gyozas de Rabo de Toro",
+        "nombre": "Gyozas de Rabo de toro",
         "tipo": "Segundo plato",
         "ingredientes": [
-          "Rabo De Toro",
+          "Rabo de toro",
           "Curry",
-          "Cebolla Encurtida",
+          "Cebolla encurtida",
           "Mayonesa"
         ],
         "precio": 11.9,
@@ -506,7 +506,7 @@
         "tipo": "Postre",
         "ingredientes": [
           "Chocolate",
-          "Helado De Vainilla",
+          "Helado de vainilla",
           "Nueces",
           "Kitkat"
         ],
@@ -519,7 +519,7 @@
         "nombre": "Lomo Ibérico",
         "tipo": "Primer plato",
         "ingredientes": [
-          "Lomo Ibérico"
+          "Lomo ibérico"
         ],
         "precio": 12.5,
         "familia": "Carne",
@@ -530,9 +530,9 @@
         "nombre": "Surtido de Quesos",
         "tipo": "Entrante",
         "ingredientes": [
-          "Queso Parmesano",
-          "Queso Holandés",
-          "Queso Camembert"
+          "Queso parmesano",
+          "Queso holandés",
+          "Queso camembert"
         ],
         "precio": 17.9,
         "familia": "Embutido",
@@ -543,7 +543,7 @@
         "nombre": "Cremoso de Zújar",
         "tipo": "Postre",
         "ingredientes": [
-          "Queso Crema"
+          "Queso crema"
         ],
         "precio": 14.9,
         "familia": "Lácteos",
@@ -555,7 +555,7 @@
         "tipo": "Entrante",
         "ingredientes": [
           "Patata",
-          "Alioli",
+          "Ali-oli",
           "Salsa"
         ],
         "precio": 7.9,
@@ -569,7 +569,7 @@
         "ingredientes": [
           "Queso",
           "Nueces",
-          "Compota De Cebolla"
+          "Compota de cebolla"
         ],
         "precio": 8.9,
         "familia": "Fritos",
@@ -582,7 +582,7 @@
         "ingredientes": [
           "Carrillera",
           "Setas",
-          "Salsa Bechamel"
+          "Salsa bechamel"
         ],
         "precio": 5.5,
         "familia": "Carne",
@@ -593,10 +593,10 @@
         "nombre": "Arroz Seco de Presa",
         "tipo": "Primer plato",
         "ingredientes": [
-          "Presa Ibérica",
+          "Presa ibérica",
           "Trigueros",
           "Setas",
-          "Ali-Oli De Soja",
+          "Ali-oli de soja",
           "Arroz"
         ],
         "precio": 19.9,
@@ -610,7 +610,7 @@
         "ingredientes": [
           "Jamón",
           "Pera",
-          "Queso Gorgonzola",
+          "Queso gorgonzola",
           "Arroz"
         ],
         "precio": 14.9,
@@ -624,7 +624,7 @@
         "ingredientes": [
           "Bacalao",
           "Pimiento",
-          "Salsa Pil Pil"
+          "Salsa pil pil"
         ],
         "precio": 16.9,
         "familia": "Pescado",
@@ -635,8 +635,8 @@
         "nombre": "Wok de Pluma",
         "tipo": "Primer plato",
         "ingredientes": [
-          "Pluma Ibérica",
-          "Fideos Arroz",
+          "Pluma ibérica",
+          "Fideos de arroz",
           "Salsa"
         ],
         "precio": 14.9,
@@ -647,7 +647,7 @@
       {
         "nombre": "Ensalada de Bogavante",
         "tipo": "Entrante",
-        "ingredientes": ["Bogavante", "Lechuga", "Tomate", "Aceite de Oliva"],
+        "ingredientes": ["Bogavante", "Lechuga", "Tomate", "Aceite de oliva"],
         "precio": 18.0,
         "familia": "Mariscos",
         "vegano": false,
@@ -701,7 +701,7 @@
       {
         "nombre": "Dorada a la Sal",
         "tipo": "Segundo plato",
-        "ingredientes": ["Dorada", "Sal", "Aceite de Oliva"],
+        "ingredientes": ["Dorada", "Sal", "Aceite de oliva"],
         "precio": 19.0,
         "familia": "Pescado",
         "vegano": false,
@@ -710,7 +710,7 @@
       {
         "nombre": "Cochinillo Asado",
         "tipo": "Segundo plato",
-        "ingredientes": ["Cochinillo", "Patata", "Aceite de Oliva"],
+        "ingredientes": ["Cochinillo", "Patata", "Aceite de oliva"],
         "precio": 24.0,
         "familia": "Carne",
         "vegano": false,
@@ -737,7 +737,7 @@
       {
         "nombre": "Fruta Fresca",
         "tipo": "Postre",
-        "ingredientes": ["Fruta variada"],
+        "ingredientes": ["Frutas variadas"],
         "precio": 4.0,
         "familia": "Fruta",
         "vegano": true,
@@ -754,7 +754,7 @@
         "ingredientes": [
           "Ternera",
           "Queso",
-          "Hígado De Pato"
+          "Hígado de pato"
         ],
         "precio": 12.4,
         "familia": "Carne",
@@ -765,10 +765,10 @@
         "nombre": "Hamburguesa Retinta",
         "tipo": "Primer plato",
         "ingredientes": [
-          "Carne Retinta",
-          "Queso Cheddar",
+          "Carne retinta",
+          "Queso cheddar",
           "Bacon",
-          "Cebolla Crujiente",
+          "Cebolla crujiente",
           "Huevo",
           "Salsa"
         ],
@@ -778,12 +778,12 @@
         "sin_gluten": false
       },
       {
-        "nombre": "Pata de pulpo con crema de boniato",
+        "nombre": "Pata de Pulpo con Crema de Boniato",
         "tipo": "Primer plato",
         "ingredientes": [
           "Pulpo",
           "Boniato",
-          "Caramelo De Pimentón"
+          "Caramelo de pimentón"
         ],
         "precio": 19.9,
         "familia": "Mariscos",
@@ -796,7 +796,7 @@
         "ingredientes": [
           "Arroz",
           "Setas",
-          "Aceite De Albahaca"
+          "Aceite de albahaca"
         ],
         "precio": 12.9,
         "familia": "Arroz",
@@ -820,7 +820,7 @@
         "tipo": "Primer plato",
         "ingredientes": [
           "Bacalao",
-          "Alioli",
+          "Ali-oli",
           "Miel"
         ],
         "precio": 18.9,
@@ -835,7 +835,7 @@
           "Ternera",
           "Sal",
           "Pimienta",
-          "Aceite de Oliva"
+          "Aceite de oliva"
         ],
         "precio": 22.0,
         "familia": "Carne",
@@ -863,7 +863,7 @@
           "Burrata",
           "Tomate",
           "Albahaca",
-          "Aceite de Oliva"
+          "Aceite de oliva"
         ],
         "precio": 11.0,
         "familia": "Lácteos",
@@ -887,7 +887,7 @@
       {
         "nombre": "Ensalada César",
         "tipo": "Entrante",
-        "ingredientes": ["Lechuga", "Pollo", "Queso Parmesano", "Picatostes", "Salsa César"],
+        "ingredientes": ["Lechuga", "Pollo", "Queso parmesano", "Picatostes", "Salsa césar"],
         "precio": 9.0,
         "familia": "Vegetal",
         "vegano": false,
@@ -905,7 +905,7 @@
       {
         "nombre": "Gazpacho de Sandía",
         "tipo": "Primer plato",
-        "ingredientes": ["Sandía", "Tomate", "Pepino", "Aceite de Oliva"],
+        "ingredientes": ["Sandía", "Tomate", "Pepino", "Aceite de oliva"],
         "precio": 6.5,
         "familia": "Vegetal",
         "vegano": true,
@@ -923,7 +923,7 @@
       {
         "nombre": "Risotto de Setas",
         "tipo": "Primer plato",
-        "ingredientes": ["Arroz", "Setas", "Queso Parmesano", "Cebolla"],
+        "ingredientes": ["Arroz", "Setas", "Queso parmesano", "Cebolla"],
         "precio": 11.0,
         "familia": "Arroz",
         "vegano": false,
@@ -941,7 +941,7 @@
       {
         "nombre": "Lubina al Horno",
         "tipo": "Segundo plato",
-        "ingredientes": ["Lubina", "Patata", "Cebolla", "Aceite de Oliva"],
+        "ingredientes": ["Lubina", "Patata", "Cebolla", "Aceite de oliva"],
         "precio": 18.0,
         "familia": "Pescado",
         "vegano": false,
@@ -950,7 +950,7 @@
       {
         "nombre": "Carrillera Ibérica",
         "tipo": "Segundo plato",
-        "ingredientes": ["Carrillera", "Vino Tinto", "Zanahoria", "Cebolla"],
+        "ingredientes": ["Carrillera", "Vino tinto", "Zanahoria", "Cebolla"],
         "precio": 17.0,
         "familia": "Carne",
         "vegano": false,
@@ -977,7 +977,7 @@
       {
         "nombre": "Fruta de Temporada",
         "tipo": "Postre",
-        "ingredientes": ["Fruta variada"],
+        "ingredientes": ["Frutas variadas"],
         "precio": 4.0,
         "familia": "Fruta",
         "vegano": true,
@@ -992,7 +992,7 @@
         "nombre": "Iberian Sausages Puro Extrem",
         "tipo": "Entrante",
         "ingredientes": [
-          "Embutidos Ibéricos"
+          "Embutidos ibéricos"
         ],
         "precio": 20.0,
         "familia": "Embutido",
@@ -1000,12 +1000,12 @@
         "sin_gluten": false
       },
       {
-        "nombre": "Grilled scallop with coconut sauce",
+        "nombre": "Grilled Scallop with Coconut Sauce",
         "tipo": "Primer plato",
         "ingredientes": [
           "Vieira",
           "Coco",
-          "Hierbas Aromáticas"
+          "Hierbas aromáticas"
         ],
         "precio": 8.0,
         "familia": "Mariscos",
@@ -1048,7 +1048,7 @@
           "Ternera",
           "Mostaza",
           "Huevo",
-          "Aceite De Oliva"
+          "Aceite de oliva"
         ],
         "precio": 27.0,
         "familia": "Carne",
@@ -1059,7 +1059,7 @@
         "nombre": "Secreto Ibérico a la Brasa",
         "tipo": "Segundo plato",
         "ingredientes": [
-          "Secreto Ibérico",
+          "Secreto ibérico",
           "Sal",
           "Pimienta"
         ],
@@ -1075,7 +1075,7 @@
           "Sandía",
           "Tomate",
           "Pepino",
-          "Aceite de Oliva"
+          "Aceite de oliva"
         ],
         "precio": 6.5,
         "familia": "Vegetal",
@@ -1098,7 +1098,7 @@
       {
         "nombre": "Ensalada de Tomate y Ventresca",
         "tipo": "Entrante",
-        "ingredientes": ["Tomate", "Ventresca", "Cebolla", "Aceite de Oliva"],
+        "ingredientes": ["Tomate", "Ventresca", "Cebolla", "Aceite de oliva"],
         "precio": 10.0,
         "familia": "Pescado",
         "vegano": false,
@@ -1143,7 +1143,7 @@
       {
         "nombre": "Dorada a la Sal",
         "tipo": "Segundo plato",
-        "ingredientes": ["Dorada", "Sal", "Aceite de Oliva"],
+        "ingredientes": ["Dorada", "Sal", "Aceite de oliva"],
         "precio": 19.0,
         "familia": "Pescado",
         "vegano": false,
@@ -1152,7 +1152,7 @@
       {
         "nombre": "Cochinillo Asado",
         "tipo": "Segundo plato",
-        "ingredientes": ["Cochinillo", "Patata", "Aceite de Oliva"],
+        "ingredientes": ["Cochinillo", "Patata", "Aceite de oliva"],
         "precio": 24.0,
         "familia": "Carne",
         "vegano": false,
@@ -1179,7 +1179,7 @@
       {
         "nombre": "Fruta Fresca",
         "tipo": "Postre",
-        "ingredientes": ["Fruta variada"],
+        "ingredientes": ["Frutas variadas"],
         "precio": 4.0,
         "familia": "Fruta",
         "vegano": true,
@@ -1194,8 +1194,8 @@
         "nombre": "Jamón Ibérico Luxury",
         "tipo": "Entrante",
         "ingredientes": [
-          "Jamón Ibérico",
-          "Pan Cristal",
+          "Jamón ibérico",
+          "Pan cristal",
           "Tomate"
         ],
         "precio": 33.0,
@@ -1223,7 +1223,7 @@
         "ingredientes": [
           "Pulpo",
           "Torreznos",
-          "Mayonesa Kimchi"
+          "Mayonesa kimchi"
         ],
         "precio": 22.5,
         "familia": "Mariscos",
@@ -1231,13 +1231,13 @@
         "sin_gluten": true
       },
       {
-        "nombre": "Croqueta de Gamba Roja",
+        "nombre": "Croquetas de Gambas Rojas",
         "tipo": "Entrante",
         "ingredientes": [
-          "Gamba Roja",
+          "Gambas rojas",
           "Harina",
           "Leche",
-          "Pan Rallado"
+          "Pan rallado"
         ],
         "precio": 18.0,
         "familia": "Mariscos",
@@ -1250,7 +1250,7 @@
         "ingredientes": [
           "Arroz",
           "Carabinero",
-          "Alioli"
+          "Ali-oli"
         ],
         "precio": 23.0,
         "familia": "Arroz",
@@ -1262,8 +1262,8 @@
         "tipo": "Segundo plato",
         "ingredientes": [
           "Bacalao",
-          "Alioli de Miel",
-          "Morro de Cerdo"
+          "Ali-oli de miel",
+          "Morro de cerdo"
         ],
         "precio": 25.0,
         "familia": "Pescado",
@@ -1276,7 +1276,7 @@
         "ingredientes": [
           "Solomillo",
           "Foie",
-          "Crema Trufada"
+          "Crema trufada"
         ],
         "precio": 27.0,
         "familia": "Carne",
@@ -1288,7 +1288,7 @@
         "tipo": "Postre",
         "ingredientes": [
           "Queso",
-          "Helado de Galleta"
+          "Helado de galleta"
         ],
         "precio": 7.5,
         "familia": "Lácteos",
@@ -1300,7 +1300,7 @@
         "tipo": "Postre",
         "ingredientes": [
           "Pistacho",
-          "Chocolate Blanco",
+          "Chocolate blanco",
           "Lima"
         ],
         "precio": 8.0,
@@ -1326,8 +1326,8 @@
         "nombre": "Cheesecake de Torta del Casar",
         "tipo": "Postre",
         "ingredientes": [
-          "Torta Del Casar",
-          "Mermelada De Membrillo",
+          "Torta del casar",
+          "Mermelada de membrillo",
           "Galleta"
         ],
         "precio": 8.0,
@@ -1353,7 +1353,7 @@
       {
         "nombre": "Ensalada de Pulpo",
         "tipo": "Entrante",
-        "ingredientes": ["Pulpo", "Patata", "Pimiento", "Aceite de Oliva"],
+        "ingredientes": ["Pulpo", "Patata", "Pimiento", "Aceite de oliva"],
         "precio": 14.0,
         "familia": "Mariscos",
         "vegano": false,
@@ -1371,7 +1371,7 @@
       {
         "nombre": "Gazpacho de Sandía",
         "tipo": "Primer plato",
-        "ingredientes": ["Sandía", "Tomate", "Pepino", "Aceite de Oliva"],
+        "ingredientes": ["Sandía", "Tomate", "Pepino", "Aceite de oliva"],
         "precio": 6.5,
         "familia": "Vegetal",
         "vegano": true,
@@ -1380,7 +1380,7 @@
       {
         "nombre": "Risotto de Setas",
         "tipo": "Primer plato",
-        "ingredientes": ["Arroz", "Setas", "Queso Parmesano", "Cebolla"],
+        "ingredientes": ["Arroz", "Setas", "Queso parmesano", "Cebolla"],
         "precio": 11.0,
         "familia": "Arroz",
         "vegano": false,
@@ -1407,7 +1407,7 @@
       {
         "nombre": "Pollo al Ajillo",
         "tipo": "Segundo plato",
-        "ingredientes": ["Pollo", "Ajo", "Aceite de Oliva", "Vino Blanco"],
+        "ingredientes": ["Pollo", "Ajo", "Aceite de oliva", "Vino blanco"],
         "precio": 13.0,
         "familia": "Carne",
         "vegano": false,
@@ -1416,7 +1416,7 @@
       {
         "nombre": "Carrillera Ibérica",
         "tipo": "Segundo plato",
-        "ingredientes": ["Carrillera", "Vino Tinto", "Zanahoria", "Cebolla"],
+        "ingredientes": ["Carrillera", "Vino tinto", "Zanahoria", "Cebolla"],
         "precio": 15.0,
         "familia": "Carne",
         "vegano": false,
@@ -1443,7 +1443,7 @@
       {
         "nombre": "Fruta de Temporada",
         "tipo": "Postre",
-        "ingredientes": ["Fruta variada"],
+        "ingredientes": ["Frutas variadas"],
         "precio": 4.0,
         "familia": "Fruta",
         "vegano": true,
@@ -1459,7 +1459,7 @@
         "tipo": "Segundo plato",
         "ingredientes": [
           "Arroz",
-          "Secreto Ibérico",
+          "Secreto ibérico",
           "Setas"
         ],
         "precio": 18.0,
@@ -1474,7 +1474,7 @@
           "Fideos",
           "Chipirón",
           "Ajo",
-          "Tinta De Calamar"
+          "Tinta de calamar"
         ],
         "precio": 15.0,
         "familia": "Mariscos",
@@ -1487,7 +1487,7 @@
         "ingredientes": [
           "Queso",
           "Fresa",
-          "Chocolate Blanco"
+          "Chocolate blanco"
         ],
         "precio": 8.0,
         "familia": "Lácteos",
@@ -1498,9 +1498,9 @@
         "nombre": "Tabla de Quesos",
         "tipo": "Entrante",
         "ingredientes": [
-          "Queso Manchego",
-          "Queso Azul",
-          "Queso de Cabra"
+          "Queso manchego",
+          "Queso azul",
+          "Queso de cabra"
         ],
         "precio": 12.0,
         "familia": "Lácteos",
@@ -1513,9 +1513,9 @@
         "ingredientes": [
           "Lechuga",
           "Pollo",
-          "Queso Parmesano",
+          "Queso parmesano",
           "Picatostes",
-          "Salsa César"
+          "Salsa césar"
         ],
         "precio": 9.0,
         "familia": "Vegetal",
@@ -1542,7 +1542,7 @@
         "ingredientes": [
           "Pulpo",
           "Pimentón",
-          "Aceite de Oliva"
+          "Aceite de oliva"
         ],
         "precio": 17.0,
         "familia": "Mariscos",
@@ -1553,7 +1553,7 @@
         "nombre": "Tiramisú",
         "tipo": "Postre",
         "ingredientes": [
-          "Queso Mascarpone",
+          "Queso mascarpone",
           "Café",
           "Bizcocho",
           "Cacao"
@@ -1566,7 +1566,7 @@
       {
         "nombre": "Gazpacho Andaluz",
         "tipo": "Primer plato",
-        "ingredientes": ["Tomate", "Pepino", "Pimiento", "Ajo", "Aceite de Oliva"],
+        "ingredientes": ["Tomate", "Pepino", "Pimiento", "Ajo", "Aceite de oliva"],
         "precio": 7.0,
         "familia": "Vegetal",
         "vegano": true,
@@ -1593,7 +1593,7 @@
       {
         "nombre": "Dorada a la Sal",
         "tipo": "Segundo plato",
-        "ingredientes": ["Dorada", "Sal", "Aceite de Oliva"],
+        "ingredientes": ["Dorada", "Sal", "Aceite de oliva"],
         "precio": 19.0,
         "familia": "Pescado",
         "vegano": false,
@@ -1602,7 +1602,7 @@
       {
         "nombre": "Cochinillo Asado",
         "tipo": "Segundo plato",
-        "ingredientes": ["Cochinillo", "Patata", "Aceite de Oliva"],
+        "ingredientes": ["Cochinillo", "Patata", "Aceite de oliva"],
         "precio": 24.0,
         "familia": "Carne",
         "vegano": false,
@@ -1629,7 +1629,7 @@
       {
         "nombre": "Fruta Fresca",
         "tipo": "Postre",
-        "ingredientes": ["Fruta variada"],
+        "ingredientes": ["Frutas variadas"],
         "precio": 4.0,
         "familia": "Fruta",
         "vegano": true,
@@ -1655,10 +1655,10 @@
         "sin_gluten": false
       },
       {
-        "nombre": "Mousse de Chocolate Blanco",
+        "nombre": "Mousse de Chocolate blanco",
         "tipo": "Postre",
         "ingredientes": [
-          "Chocolate Blanco",
+          "Chocolate blanco",
           "Filipinos"
         ],
         "precio": 7.5,
@@ -1671,9 +1671,9 @@
         "tipo": "Segundo plato",
         "ingredientes": [
           "Pan",
-          "Proteína Vegetal",
+          "Proteína vegetal",
           "Guacamole",
-          "Brotes Tiernos"
+          "Brotes tiernos"
         ],
         "precio": 16.0,
         "familia": "Vegetal",
@@ -1684,10 +1684,10 @@
         "nombre": "Hummus de Garbanzo",
         "tipo": "Entrante",
         "ingredientes": [
-          "Garbanzo",
+          "Garbanzos",
           "Tahini",
           "Limón",
-          "Aceite de Oliva"
+          "Aceite de oliva"
         ],
         "precio": 7.0,
         "familia": "Vegetal",
@@ -1701,7 +1701,7 @@
           "Calabacín",
           "Patata",
           "Cebolla",
-          "Aceite de Oliva"
+          "Aceite de oliva"
         ],
         "precio": 8.0,
         "familia": "Vegetal",
@@ -1727,9 +1727,9 @@
         "tipo": "Postre",
         "ingredientes": [
           "Zanahoria",
-          "Harina Integral",
+          "Harina integral",
           "Nueces",
-          "Aceite de Coco"
+          "Aceite de coco"
         ],
         "precio": 6.5,
         "familia": "Lácteos",
@@ -1744,7 +1744,7 @@
           "Pepino",
           "Pimiento",
           "Ajo",
-          "Aceite de Oliva"
+          "Aceite de oliva"
         ],
         "precio": 6.5,
         "familia": "Vegetal",
@@ -1754,7 +1754,7 @@
       {
         "nombre": "Gazpacho de Remolacha",
         "tipo": "Entrante",
-        "ingredientes": ["Remolacha", "Tomate", "Pepino", "Aceite de Oliva"],
+        "ingredientes": ["Remolacha", "Tomate", "Pepino", "Aceite de oliva"],
         "precio": 6.0,
         "familia": "Vegetal",
         "vegano": true,
@@ -1772,7 +1772,7 @@
       {
         "nombre": "Carpaccio de Calabacín",
         "tipo": "Entrante",
-        "ingredientes": ["Calabacín", "Aceite de Oliva", "Limón", "Pimienta"],
+        "ingredientes": ["Calabacín", "Aceite de oliva", "Limón", "Pimienta"],
         "precio": 6.5,
         "familia": "Vegetal",
         "vegano": true,
@@ -1799,7 +1799,7 @@
       {
         "nombre": "Crema de Zanahoria y Naranja",
         "tipo": "Primer plato",
-        "ingredientes": ["Zanahoria", "Naranja", "Cebolla", "Aceite de Oliva"],
+        "ingredientes": ["Zanahoria", "Naranja", "Cebolla", "Aceite de oliva"],
         "precio": 7.5,
         "familia": "Vegetal",
         "vegano": true,
@@ -1853,7 +1853,7 @@
       {
         "nombre": "Tarta de Manzana Vegana",
         "tipo": "Postre",
-        "ingredientes": ["Manzana", "Harina", "Azúcar", "Aceite de Coco"],
+        "ingredientes": ["Manzana", "Harina", "Azúcar", "Aceite de coco"],
         "precio": 5.5,
         "familia": "Lácteos",
         "vegano": true,
@@ -1867,7 +1867,7 @@
       {
         "nombre": "Gambas al Ajillo",
         "tipo": "Entrante",
-        "ingredientes": ["Gambas", "Ajo", "Aceite de Oliva", "Guindilla"],
+        "ingredientes": ["Gambas", "Ajo", "Aceite de oliva", "Guindilla"],
         "precio": 12.0,
         "familia": "Mariscos",
         "vegano": false,
@@ -1876,7 +1876,7 @@
       {
         "nombre": "Mejillones a la Marinera",
         "tipo": "Entrante",
-        "ingredientes": ["Mejillones", "Cebolla", "Tomate", "Vino Blanco"],
+        "ingredientes": ["Mejillones", "Cebolla", "Tomate", "Vino blanco"],
         "precio": 10.0,
         "familia": "Mariscos",
         "vegano": false,
@@ -1894,7 +1894,7 @@
       {
         "nombre": "Ensalada de Pulpo",
         "tipo": "Entrante",
-        "ingredientes": ["Pulpo", "Patata", "Pimiento", "Aceite de Oliva"],
+        "ingredientes": ["Pulpo", "Patata", "Pimiento", "Aceite de oliva"],
         "precio": 13.0,
         "familia": "Mariscos",
         "vegano": false,
@@ -1903,7 +1903,7 @@
       {
         "nombre": "Croquetas de Marisco",
         "tipo": "Entrante",
-        "ingredientes": ["Marisco", "Harina", "Leche", "Pan rallado"],
+        "ingredientes": ["Mariscos", "Harina", "Leche", "Pan rallado"],
         "precio": 9.0,
         "familia": "Mariscos",
         "vegano": false,
@@ -1930,7 +1930,7 @@
       {
         "nombre": "Fideuá de Marisco",
         "tipo": "Primer plato",
-        "ingredientes": ["Fideos", "Mariscos", "Caldo de Pescado"],
+        "ingredientes": ["Fideos", "Mariscos", "Caldo de pescado"],
         "precio": 15.0,
         "familia": "Mariscos",
         "vegano": false,
@@ -1957,7 +1957,7 @@
       {
         "nombre": "Lubina a la Sal",
         "tipo": "Segundo plato",
-        "ingredientes": ["Lubina", "Sal", "Aceite de Oliva"],
+        "ingredientes": ["Lubina", "Sal", "Aceite de oliva"],
         "precio": 20.0,
         "familia": "Pescado",
         "vegano": false,
@@ -1966,7 +1966,7 @@
       {
         "nombre": "Arroz Negro",
         "tipo": "Segundo plato",
-        "ingredientes": ["Arroz", "Tinta de Calamar", "Calamares", "Ajo"],
+        "ingredientes": ["Arroz", "Tinta de calamar", "Calamares", "Ajo"],
         "precio": 17.0,
         "familia": "Arroz",
         "vegano": false,
@@ -1975,7 +1975,7 @@
       {
         "nombre": "Zarzuela de Mariscos",
         "tipo": "Segundo plato",
-        "ingredientes": ["Mariscos variados", "Pescado", "Tomate", "Ajo"],
+        "ingredientes": ["Mariscos", "Pescado", "Tomate", "Ajo"],
         "precio": 22.0,
         "familia": "Mariscos",
         "vegano": false,
@@ -1984,7 +1984,7 @@
       {
         "nombre": "Dorada al Horno",
         "tipo": "Segundo plato",
-        "ingredientes": ["Dorada", "Patata", "Cebolla", "Aceite de Oliva"],
+        "ingredientes": ["Dorada", "Patata", "Cebolla", "Aceite de oliva"],
         "precio": 19.0,
         "familia": "Pescado",
         "vegano": false,
@@ -2020,7 +2020,7 @@
       {
         "nombre": "Fruta de Temporada",
         "tipo": "Postre",
-        "ingredientes": ["Fruta variada"],
+        "ingredientes": ["Frutas variadas"],
         "precio": 4.0,
         "familia": "Fruta",
         "vegano": true,
@@ -2088,7 +2088,7 @@
       {
         "nombre": "Sopa Miso",
         "tipo": "Entrante",
-        "ingredientes": ["Miso", "Tofu", "Cebolleta", "Alga Wakame"],
+        "ingredientes": ["Miso", "Tofu", "Cebolleta", "Wakame"],
         "precio": 5.5,
         "familia": "Vegetal",
         "vegano": true,
@@ -2142,7 +2142,7 @@
       {
         "nombre": "Pollo Teriyaki",
         "tipo": "Segundo plato",
-        "ingredientes": ["Pollo", "Salsa Teriyaki", "Sésamo", "Arroz"],
+        "ingredientes": ["Pollo", "Salsa teriyaki", "Sésamo", "Arroz"],
         "precio": 14.0,
         "familia": "Carne",
         "vegano": false,
@@ -2151,7 +2151,7 @@
       {
         "nombre": "Salmón al Vapor con Jengibre",
         "tipo": "Segundo plato",
-        "ingredientes": ["Salmón", "Jengibre", "Salsa de Soja"],
+        "ingredientes": ["Salmón", "Jengibre", "Salsa de soja"],
         "precio": 16.0,
         "familia": "Pescado",
         "vegano": false,
@@ -2169,7 +2169,7 @@
       {
         "nombre": "Pato Pekín",
         "tipo": "Segundo plato",
-        "ingredientes": ["Pato", "Salsa Hoisin", "Cebolleta", "Tortitas"],
+        "ingredientes": ["Pato", "Salsa hoisin", "Cebolleta", "Tortitas"],
         "precio": 18.0,
         "familia": "Carne",
         "vegano": false,
@@ -2214,7 +2214,7 @@
       {
         "nombre": "Fruta Fresca Oriental",
         "tipo": "Postre",
-        "ingredientes": ["Fruta variada"],
+        "ingredientes": ["Frutas variadas"],
         "precio": 4.0,
         "familia": "Fruta",
         "vegano": true,
