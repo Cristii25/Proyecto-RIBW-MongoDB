@@ -3,7 +3,7 @@ const fs = require("fs");
 const path = require("path");
 
 // Importa la colección de restaurantes
-async function importarDatosYCrearIndices() {
+async function importDataAndCreateIndexes() {
   const db = await conectar();
   const coleccion = db.collection("restaurantes");
 
@@ -46,7 +46,8 @@ async function importarDatosYCrearIndices() {
 }
 
 // Ejecutar la función de importación y creación de índices
-importarDatosYCrearIndices()
+
+importDataAndCreateIndexes()
   .then(() => process.exit())
   .catch((err) => {
     console.error("❌ Error:", err);
