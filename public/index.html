@@ -184,20 +184,20 @@
       const data = await res.json();
       const div = document.getElementById("resultadoPlatos");
 
-      // Muestra los resultados de la búsqueda de platos por nombre
       if (data.length === 0) {
+        div.style.display = "block";
         div.innerHTML = "<p>No se encontraron platos con ese nombre.</p>";
       } else {
         div.style.display = "block";
         div.innerHTML = data.map(item =>
           `<div>
-            <h3>${item.plato.nombre}</h3>
-            <p><strong>Restaurante:</strong> ${item.restaurante}</p>
-            <p><strong>Precio:</strong> ${item.plato.precio.toFixed(2)}€</p>
-            <p><strong>Ingredientes:</strong> ${item.plato.ingredientes.join(", ")}</p>
-            ${item.plato.vegano ? "<p>🥦 Vegano</p>" : ""}
-            ${item.plato.sin_gluten ? "<p>🚫 Sin gluten</p>" : ""}
-          </div>`
+        <h3>${item.plato.nombre}</h3>
+        <p><strong>Restaurante:</strong> ${item.restaurante}</p>
+        <p><strong>Precio:</strong> ${item.plato.precio.toFixed(2)}€</p>
+        <p><strong>Ingredientes:</strong> ${item.plato.ingredientes.join(", ")}</p>
+        ${item.plato.vegano ? "<p>🥦 Vegano</p>" : ""}
+        ${item.plato.sin_gluten ? "<p>🚫 Sin gluten</p>" : ""}
+      </div>`
         ).join("");
       }
     }
