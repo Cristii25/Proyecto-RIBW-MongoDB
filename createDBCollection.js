@@ -40,7 +40,7 @@ async function importDataAndCreateIndexes() {
   await coleccion.createIndex({ "platos.nombre": 1 });
 
   // Crear índice de texto para buscar por nombre de plato -> NO SE UTILIZA
-  await restaurantes.createIndex({ "platos.nombre": "text" });
+  await coleccion.createIndex({ "platos.nombre": "text" });
 
   console.log("✅ Índices creados correctamente.");
 }

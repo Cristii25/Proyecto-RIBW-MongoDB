@@ -1,7 +1,7 @@
 # Proyecto-RIBW-MongoDB
 
 # Creación de índices
-    createDBCollection.js
+    node createDBCollection.js
 
 # Ejecutar app
     node app.js
